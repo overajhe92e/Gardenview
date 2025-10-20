@@ -5,7 +5,10 @@ return {
             bl_dw_TIMES_UP = {
                 name = "TIME'S UP",
                 text = {
-                    
+                    "Blind size increases by",
+                    "X1.3 every second.",
+                    "Disabling Blind will multiply",
+                    "current requirement by X12"
                 }
             }
         },
@@ -73,7 +76,16 @@ return {
                     "a {C:attention}Blind{} is selected, and",
                     "at the end of the round.",
                     "{X:dark_edition,C:white}^1.5{} {X:red,C:white}XMult{} if a blind",
-                    "is defeated in {C:attention}one hand{}"
+                    "is defeated in {C:attention}one hand{}",
+                    "{C:inactive}Currently{} {X:red,C:white}X#1#{} {C:inactive}Mult{}"
+                }
+            },
+            j_dw_yatta = {
+                name = "Yatta",
+                text = {
+                    "Gives 3 Candy Consumables",
+                    "when a {C:attention}Boss Blind{} is defeated.",
+                    "{C:blue,s:0.8}#1#{}"
                 }
             }
         },
@@ -92,6 +104,12 @@ return {
         challenge_names = {},
         collabs = {},
         dictionary = {
+
+            k_dw_yatta_quote1 = "PHEW! Good thing my tail hasn't been TANGLED!",
+            k_dw_yatta_quote2= "Did I drop candy ANYWHERE in the elevator?",
+            k_dw_yatta_quote3= "AHAHAHAaaa... Thought of something funny!",
+            k_dw_yatta_quote4= "Candy candy caNDY, CANDY FOR ALL!!!",
+
             k_dw_twisted_common = "Twisted Common",
             k_dw_twisted_uncommon = "Twisted Uncommon",
             k_dw_twisted_rare = "Twisted Rare",

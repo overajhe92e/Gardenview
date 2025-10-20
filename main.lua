@@ -12,8 +12,8 @@ SMODS.Atlas {
     path = 'dandysworld.png'
 }
 
-local jokers_src = NFS.getDirectoryItems(SMODS.current_mod.path .. "items/jokers/")
-for _, file in ipairs(jokers_src) do
+local src = NFS.getDirectoryItems(SMODS.current_mod.path .. "items/jokers/")
+for _, file in ipairs(src) do
     assert(SMODS.load_file("items/jokers/" .. file))()
 end
 
@@ -22,4 +22,17 @@ local function thy()
     assert(SMODS.load_file("items/misc/rarities.lua"))()
 end
 
+local function blindbs()
+    local mod_path = SMODS.current_mod.path
+    local blinds = mod_path .. "items/blinds"
+    local files = NFS.getDirectoryItemsInfo(blinds)
+    for i = 1, #files do
+        local file_name = files[i].name
+        if file_name:sub(-4) == ".lua" then
+            assert(SMODS.load_file("items/blinds/" .. file_name))()
+        end
+    end
+end
+
 thy()
+blindbs()
