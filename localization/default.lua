@@ -1,7 +1,14 @@
 return {
     descriptions = {
         Back = {},
-        Blind = {},
+        Blind = {
+            bl_dw_TIMES_UP = {
+                name = "TIME'S UP",
+                text = {
+                    
+                }
+            }
+        },
         Edition = {},
         Enhanced = {},
         Joker = {
@@ -50,7 +57,25 @@ return {
 						"by {C:attention}+1{}"
 					}
 				}
-			}
+			},
+            j_dw_dyle = {
+                name = "Dyle Timesly",
+                text = {
+                    "Gains {X:red,C:white}X0.5{} Mult when",
+                    "a {C:attention}Blind{} is selected.",
+                    "{C:inactive}Currently{} {X:red,C:white}X#1#{} {C:inactive}Mult{}"
+                }
+            },
+            j_dw_tw_dyle = {
+                name = "Twisted Dyle",
+                text = {
+                    "Gains {X:red,C:white}X1{} Mult when",
+                    "a {C:attention}Blind{} is selected, and",
+                    "at the end of the round.",
+                    "{X:dark_edition,C:white}^1.5{} {X:red,C:white}XMult{} if a blind",
+                    "is defeated in {C:attention}one hand{}"
+                }
+            }
         },
         Other = {},
         Planet = {},
@@ -67,17 +92,19 @@ return {
         challenge_names = {},
         collabs = {},
         dictionary = {
-            k_dw_twcommon = "Twisted Common",
-            k_dw_twuncommon = "Twisted Uncommon",
-            k_dw_twrare = "Twisted Rare",
-            k_dw_twlegendary = "Twisted Legendary",
+            k_dw_twisted_common = "Twisted Common",
+            k_dw_twisted_uncommon = "Twisted Uncommon",
+            k_dw_twisted_rare = "Twisted Rare",
+            k_dw_twisted_legendary = "Twisted Legendary",
+            k_dw_twisted_lethal = "Twisted Lethal",
         },
         high_scores = {},
         labels = {
-            dw_twcommon = "Twisted Common",
-            dw_twuncommon = "Twisted Uncommon",
-            dw_twrare = "Twisted Rare",
-            dw_twlegendary = "Twisted Legendary",
+            dw_twisted_common = "Twisted Common",
+            dw_twisted_uncommon = "Twisted Uncommon",
+            dw_twisted_rare = "Twisted Rare",
+            dw_twisted_legendary = "Twisted Legendary",
+            dw_twisted_lethal = "Twisted Lethal",
         },
         poker_hand_descriptions = {},
         poker_hands = {},

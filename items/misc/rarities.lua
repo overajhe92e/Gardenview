@@ -1,5 +1,5 @@
 SMODS.Rarity {
-    key = "twcommon",
+    key = "twisted_common",
     pools = {
         ["Joker"] = true
     },
@@ -12,7 +12,7 @@ SMODS.Rarity {
 }
 
 SMODS.Rarity {
-    key = "twuncommon",
+    key = "twisted_uncommon",
     pools = {
         ["Joker"] = true
     },
@@ -25,7 +25,7 @@ SMODS.Rarity {
 }
 
 SMODS.Rarity {
-    key = "twrare",
+    key = "twisted_rare",
     pools = {
         ["Joker"] = true
     },
@@ -38,12 +38,25 @@ SMODS.Rarity {
 }
 
 SMODS.Rarity {
-    key = "twlegendary",
+    key = "twisted_legendary",
     pools = {
         ["Joker"] = true
     },
     default_weight = 0,
     badge_colour = HEX('1a1a1a'),
+    badge_text_colour = G.C.RARITY.Legendary,
+    get_weight = function(self, weight, object_type)
+        return weight
+    end,
+}
+
+SMODS.Rarity {
+    key = "twisted_lethal",
+    pools = {
+        ["Joker"] = true
+    },
+    default_weight = 0,
+    badge_colour = HEX('1d003b'),
     badge_text_colour = G.C.RARITY.Legendary,
     get_weight = function(self, weight, object_type)
         return weight
