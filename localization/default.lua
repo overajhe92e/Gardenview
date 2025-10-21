@@ -3,7 +3,7 @@ return {
         Back = {},
         Blind = {
             bl_dw_TIMES_UP = {
-                name = "TIME'S UP",
+                name = "Time's up",
                 text = {
                     "Blind size increases by",
                     "X1.3 every second.",
@@ -16,17 +16,24 @@ return {
         Enhanced = {},
         Joker = {
             j_dw_dandy = {
-                name = 'Dandy Dancifier',
+                name = 'Dandicus Dancifier',
                 text = {
                     {
-                        "{C:blue}The Star of the Show!{}",
-                        "{C:inactive}CONCEPT JOKER, ABILITY MAY CHANGE{}"
-                    },
-                    {
                         "Gains {X:red,C:white}X0.1{} Mult for",
-                        "every {C:attention}unique{} item bought this run.",
-                        "{C:inactive,s:0.8}Just don't go 3 shops without buying anything.{}"
+                        "every item bought this run.",
+                        "{C:inactive}(Currently{} {X:red,C:white}X#1#{} {C:inactive}Mult)",
+                        "{C:inactive,s:0.8}Going 3 Shops without buying anything will lead to something bad.{}"
                     }
+                }
+            },
+            j_dw_tw_dandy = {
+                name = 'Twisted Dandy',
+                text = {
+                    "Gains {X:red,C:white}X1{} Mult for",
+                    "every item bought this run.",
+                    "Gains an additional {X:red,C:white}^0.05{} Mult for",
+                    "every {C:money}$1{} you have.",
+                    "{C:inactive}(Currently{} {X:red,C:white}X#1#{} {C:inactive}Mult){}"
                 }
             },
             j_dw_astro = {
@@ -64,7 +71,7 @@ return {
             j_dw_dyle = {
                 name = "Dyle Timesly",
                 text = {
-                    "Gains {X:red,C:white}X0.5{} Mult when",
+                    "Gains {X:red,C:white}X1{} Mult when",
                     "a {C:attention}Blind{} is selected.",
                     "{C:inactive}Currently{} {X:red,C:white}X#1#{} {C:inactive}Mult{}"
                 }
@@ -72,10 +79,9 @@ return {
             j_dw_tw_dyle = {
                 name = "Twisted Dyle",
                 text = {
-                    "Gains {X:red,C:white}X1{} Mult when",
-                    "a {C:attention}Blind{} is selected, and",
-                    "at the end of the round.",
-                    "{X:dark_edition,C:white}^1.5{} {X:red,C:white}XMult{} if a blind",
+                    "Gains {X:red,C:white}X2{} Mult when",
+                    "a {C:attention}Blind{} is selected",
+                    "{X:dark_edition,C:white}^1.1{} {X:red,C:white}XMult{} if a blind",
                     "is defeated in {C:attention}one hand{}",
                     "{C:inactive}Currently{} {X:red,C:white}X#1#{} {C:inactive}Mult{}"
                 }
