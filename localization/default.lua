@@ -122,15 +122,23 @@ return {
             j_dw_blot = {
                 name = "Blot",
                 text = {
-                    "{X:mult,C:white}^1.15{}Mult.",
-                    "Create Blot Jr. when a Boss Blind is defeated."
+                    "{X:mult,C:white}^1.15{} Mult.",
+                    "Create Blot Jr. when a {C:attention}Boss Blind{} is defeated."
                 }
             },
             j_dw_blotjr = {
                 name = "Blot Jr.",
                 text = {
-                    "{X:mult,C:white}X1.25{}Mult.",
-                    "Destroyed after 3 Rounds."
+                    "{X:mult,C:white}X1.25{} Mult.",
+                    "Destroyed after {C:attention}#1#{} Rounds."
+                }
+            },
+            j_dw_gigi = {
+                name = "Gigi",
+                text = {
+                    "Creates a random {C:attention}Joker{}",
+                    "or {C:tarot}Consumable{} when",
+                    "a {C:attentin}Blind{} is {C:attention}skipped{}"
                 }
             }
         },
@@ -165,6 +173,10 @@ return {
             k_dw_twisted_rare = "Twisted Rare",
             k_dw_twisted_legendary = "Twisted Legendary",
             k_dw_twisted_lethal = "Lethal",
+
+            k_dw_blotyap1 = "Jr. Incoming!",
+            k_dw_blotyap2 = "!em inim A"
+
         },
         high_scores = {},
         labels = {
