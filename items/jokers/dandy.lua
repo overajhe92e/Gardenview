@@ -15,8 +15,9 @@ SMODS.Joker {
     end,
     calculate = function(self,card,context)
         if context.buying_card then
+            card.ability.extra.noitem = false
             card.ability.extra.anger = 0
-            card.ability.extra.xmult = card.ability.extra.xmult + 0.1
+            card.ability.extra.xmult = card.ability.extra.xmult + 0.25
             return{message="X"..tostring(card.ability.extra.xmult).." Mult"}
         end
         if context.joker_main then
@@ -28,6 +29,9 @@ SMODS.Joker {
             card.ability.extra.xmult = 1
             return{message="Reset!"}
         end
+        if context.ending_shop and card.ability.extra.noitem == true then
+            card.ability.extra.anger = card.ability.extra.anger + 1
+        end
     end
 }
 
@@ -37,20 +41,22 @@ SMODS.Joker {
     rarity = 'dw_twisted_lethal',
     config = {
         extra = {
-            xmult = 1
+            xmult = 1,
+            wake_up_its_talisman_check_time = 0.05
         },
     },
     loc_vars = function(self,info_queue,card)
-        return { vars = { card.ability.extra.xmult }}
+        return { vars = { card.ability.extra.xmult, card.ability.extra.wake_up_its_talisman_check_time * math.max(0, (G.GAME.dollars or 0) + (G.GAME.dollar_buffer or 0)) + 1 }}
     end,
     calculate = function(self,card,context)
         if context.buying_card then
-            card.ability.extra.xmult = card.ability.extra.xmult + 0.3
+            card.ability.extra.xmult = card.ability.extra.xmult + 1
             return{message="X"..tostring(card.ability.extra.xmult).." Mult"}
         end
         if context.joker_main then
             return {
-                xmult = card.ability.extra.xmult
+                xmult = card.ability.extra.xmult,
+                emult = card.ability.extra.wake_up_its_talisman_check_time * math.max(0, (G.GAME.dollars or 0) + (G.GAME.dollar_buffer or 0)) + 1
             }
         end
     end

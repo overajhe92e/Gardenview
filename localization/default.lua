@@ -19,8 +19,10 @@ return {
                 name = 'Dandicus Dancifier',
                 text = {
                     {
-                        "Gains {X:red,C:white}X0.1{} Mult for",
-                        "every item bought this run.",
+                        "Gains {X:red,C:white}X0.25{} Mult for",
+                        "every item bought this run",
+                        "{C:attention}Resets{} after defeating",
+                        "{C:attention}2 Boss Blinds{}",
                         "{C:inactive}(Currently{} {X:red,C:white}X#1#{} {C:inactive}Mult)",
                         "{C:inactive,s:0.8}Going 3 Shops without buying anything will lead to something bad.{}"
                     }
@@ -31,9 +33,10 @@ return {
                 text = {
                     "Gains {X:red,C:white}X1{} Mult for",
                     "every item bought this run.",
-                    "Gains an additional {X:red,C:white}^0.05{} Mult for",
+                    "Gains an additional {X:dark_edition,C:white}^0.05{} Mult for",
                     "every {C:money}$1{} you have.",
-                    "{C:inactive}(Currently{} {X:red,C:white}X#1#{} {C:inactive}Mult){}"
+                    "{C:inactive}(Currently{} {X:red,C:white}X#1#{} {C:inactive}Mult){}",
+                    "{C:inactive}(Currently{} {X:dark_edition,C:white}^#2#{} {C:inactive}EMult){}"
                 }
             },
             j_dw_astro = {
@@ -93,6 +96,15 @@ return {
                     "when a {C:attention}Boss Blind{} is defeated.",
                     "{C:blue,s:0.8}#1#{}"
                 }
+            },
+            j_dw_finn = {
+                name = "Finn",
+                text = {
+                    "{C:red}+50{} Mult",
+                    "At the end of the round,",
+                    "{X:red,C:white}X3{} Mult for {C:blue}1 hand{}",
+                    "{C:inactive}#1#{}"
+                }
             }
         },
         Other = {},
@@ -116,11 +128,16 @@ return {
             k_dw_yatta_quote3= "AHAHAHAaaa... Thought of something funny!",
             k_dw_yatta_quote4= "Candy candy caNDY, CANDY FOR ALL!!!",
 
+            k_dw_finn_complete1 = "Hook, line and sinker!",
+            k_dw_finn_complete2 = "I was born to fish, not to play cards!",
+            k_dw_finn_complete3 = "It's as shrimp-le as that!",
+            k_dw_finn_complete4 = "That wasn't very clam-plicated!",
+
             k_dw_twisted_common = "Twisted Common",
             k_dw_twisted_uncommon = "Twisted Uncommon",
             k_dw_twisted_rare = "Twisted Rare",
             k_dw_twisted_legendary = "Twisted Legendary",
-            k_dw_twisted_lethal = "Twisted Lethal",
+            k_dw_twisted_lethal = "Lethal",
         },
         high_scores = {},
         labels = {
@@ -128,7 +145,7 @@ return {
             dw_twisted_uncommon = "Twisted Uncommon",
             dw_twisted_rare = "Twisted Rare",
             dw_twisted_legendary = "Twisted Legendary",
-            dw_twisted_lethal = "Twisted Lethal",
+            dw_twisted_lethal = "Lethal",
         },
         poker_hand_descriptions = {},
         poker_hands = {},
