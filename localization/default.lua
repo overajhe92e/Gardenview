@@ -119,12 +119,18 @@ return {
                     "for every {C:attention}Joker{} you have"
                 }
             },
-            j_dw_gigi = {
-                name = "Gigi",
+            j_dw_blot = {
+                name = "Blot",
                 text = {
-                    "Creates a random {C:attention}Joker{}",
-                    "or {C:attention}Consumable{} when a",
-                    "blind is {C:attention}skipped{}."
+                    "{X:mult,C:white}^1.15{}Mult.",
+                    "Create Blot Jr. when a Boss Blind is defeated."
+                }
+            },
+            j_dw_blotjr = {
+                name = "Blot Jr.",
+                text = {
+                    "{X:mult,C:white}X1.25{}Mult.",
+                    "Destroyed after 3 Rounds."
                 }
             }
         },
