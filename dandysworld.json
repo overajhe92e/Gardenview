@@ -1,10 +1,10 @@
 {
 	"id": "dandysworld",
-	"name": "Iso's Dandy's World Mod",
-	"display_name": "Iso's Dandy's World Mod",
+	"name": "Gardenview",
+	"display_name": "Gardenview",
 	"author": [
         "Isotypical",
-        "?"
+        "FireIce"
     ],
 	"description": "Placeholder Description",
 	"prefix": "dw",

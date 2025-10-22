@@ -105,6 +105,19 @@ return {
                     "{X:red,C:white}X3{} Mult for {C:blue}1 hand{}",
                     "{C:inactive}#1#{}"
                 }
+            },
+            j_dw_vee = {
+                name = "Vee Version One",
+                text = {
+                    "{C:red}No ability yet!{}"
+                }
+            },
+            j_dw_shelly = {
+                name = "Shelly Fossilian",
+                text = {
+                    "{X:dark_edition,C:white}^0.95{} Blind requirement",
+                    "for every {C:attention}Joker{} you have"
+                }
             }
         },
         Other = {},
