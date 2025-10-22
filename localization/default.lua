@@ -118,6 +118,14 @@ return {
                     "{X:dark_edition,C:white}^0.95{} Blind requirement",
                     "for every {C:attention}Joker{} you have"
                 }
+            },
+            j_dw_gigi = {
+                name = "Gigi",
+                text = {
+                    "Creates a random {C:attention}Joker{}",
+                    "or {C:attention}Consumable{} when a",
+                    "blind is {C:attention}skipped{}."
+                }
             }
         },
         Other = {},
