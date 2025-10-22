@@ -36,11 +36,11 @@ SMODS.Joker {
     end,
     calculate = function(self, card, context)
         if context.setting_blind then
-            card.ability.extra.xmult = card.ability.extra.xmult + 1
+            card.ability.extra.xmult = card.ability.extra.xmult + 2
         end
-        if context.end_of_round and context.game_over == false then
-            card.ability.extra.xmult = card.ability.extra.xmult + 1
-        end
+        -- if context.end_of_round and context.game_over == false then
+        --     card.ability.extra.xmult = card.ability.extra.xmult + 1
+        -- end
         if context.joker_main then
             return {
                 xmult = card.ability.extra.xmult
