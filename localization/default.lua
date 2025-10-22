@@ -118,6 +118,20 @@ return {
                     "{X:dark_edition,C:white}^0.95{} Blind requirement",
                     "for every {C:attention}Joker{} you have"
                 }
+            },
+            j_dw_blot = {
+                name = "Blot",
+                text = {
+                    "{X:mult,C:white}^1.15{}Mult.",
+                    "Create Blot Jr. when a Boss Blind is defeated."
+                }
+            },
+            j_dw_blotjr = {
+                name = "Blot Jr.",
+                text = {
+                    "{X:mult,C:white}X1.25{}Mult.",
+                    "Destroyed after 3 Rounds."
+                }
             }
         },
         Other = {},
