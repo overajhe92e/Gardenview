@@ -31,6 +31,8 @@ SMODS.Joker {
         end
         if context.ending_shop and card.ability.extra.noitem == true then
             card.ability.extra.anger = card.ability.extra.anger + 1
+        elseif context.ending_shop and card.ability.extra.noitem == false then
+            card.ability.extra.noitem = true
         end
     end
 }
