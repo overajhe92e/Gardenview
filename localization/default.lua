@@ -16,7 +16,7 @@ return {
         Enhanced = {},
         Joker = {
             j_dw_dandy = {
-                name = 'Dandicus Dancifier',
+                name = 'Dandicus Dancifer',
                 text = {
                     {
                         "Gains {X:red,C:white}X0.25{} Mult for",
