@@ -10,6 +10,7 @@ SMODS.Joker {
             reset = 0
         }
     },
+    blueprint_compat = true,
     loc_vars = function(self,info_queue,card)
         return { vars = { card.ability.extra.xmult }}
     end,
@@ -47,6 +48,7 @@ SMODS.Joker {
             wake_up_its_talisman_check_time = 0.05
         },
     },
+    blueprint_compat = true,
     loc_vars = function(self,info_queue,card)
         return { vars = { card.ability.extra.xmult, card.ability.extra.wake_up_its_talisman_check_time * math.max(0, (G.GAME.dollars or 0) + (G.GAME.dollar_buffer or 0)) + 1 }}
     end,

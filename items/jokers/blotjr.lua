@@ -2,7 +2,7 @@ SMODS.Joker {
     key = "blotjr",
     cost = 0,
     rarity = 2,
-    config = { extra = { lifetime = 3, x_mult = 1.25, start_dissolve = 0, y = 0 } },
+    config = { extra = { lifetime = 4, x_mult = 1.25, start_dissolve = 0, y = 0 } }, -- +1 lifetime since on creation blotjr loses durability somehow
     in_pool = function(self, args)
         return false
     end,
@@ -16,7 +16,7 @@ SMODS.Joker {
             }
         end
         if context.end_of_round and context.game_over == false and context.main_eval then
-            if (card.ability.extra.lifetime or 0) == 0 then
+            if (card.ability.extra.lifetime or 0) <= 1 then
                 return {
                     func = function()
                         card:start_dissolve()
@@ -24,7 +24,7 @@ SMODS.Joker {
                     end,
                     message = "Destroyed!"
                 }
-            elseif (card.ability.extra.lifetime or 0) > 0 then
+            elseif (card.ability.extra.lifetime or 0) > 1 then
                 return {
                     func = function()
                         card.ability.extra.lifetime = math.max(0, (card.ability.extra.lifetime) - 1)
