@@ -141,9 +141,22 @@ return {
                     "or {C:tarot}Consumable{} when",
                     "a {C:attentin}Blind{} is {C:attention}skipped{}"
                 }
-            }
+            },
         },
         Other = {},
+        candy = {
+            c_dw_speed = {
+                name = "Speed Candy",
+                text = {
+                    {
+                        "{E:1}Upon use, increases {C:attention,E:1}Walk{E:1} and {C:attention,E:1}Run Speed{E:1} by {C:mult,E:1}25%{E:1} for {E:1,C:green}5 seconds{E:1}.{}"
+                    },
+                    {
+                        "{C:money}+15${}"
+                    }
+                }
+            },
+        },
         Planet = {},
         Spectral = {},
         Stake = {},
@@ -181,7 +194,15 @@ return {
             k_dw_veespeak1 = "This would be the perfect time for a commercial!",
             k_dw_veespeak2 = "Question 1: Is this a waste of my time? Probably.",
             k_dw_veespeak3 = "As simple as binary code!",
-            k_dw_veespeak4 = "I bet Dandy couldn't do this!",
+            k_dw_veespeak4 = "I bet Dandy couldn't do this!", -- meanwhile dandy's stats:
+            
+            -- // Consumable Types ( no touchy :) ) // --
+            k_trinket = "Trinket",
+            b_trinket_cards = "Trinkets",
+            k_item = "Item",
+            b_item_cards = "Items",
+            k_candy = "Candy",
+            b_candy_cards = "Candies",
 
         },
         high_scores = {},
