@@ -3,7 +3,7 @@ return {
         Back = {},
         Blind = {
             bl_dw_TIMES_UP = {
-                name = "Time's up",
+                name = "TIME'S UP",
                 text = {
                     "Blind size increases by",
                     "X1.3 every second.",
@@ -109,7 +109,8 @@ return {
             j_dw_vee = {
                 name = "Vee Version One",
                 text = {
-                    "{C:red}No ability yet!{}"
+                    "{C:red}No ability yet!{}",
+                    "{C:green,s:0.85,E:1}#1#{}"
                 }
             },
             j_dw_shelly = {
@@ -164,7 +165,7 @@ return {
             k_dw_yatta_quote4= "Candy candy caNDY, CANDY FOR ALL!!!",
 
             k_dw_finn_complete1 = "Hook, line and sinker!",
-            k_dw_finn_complete2 = "I was born to fish, not to play cards!",
+            k_dw_finn_complete2 = "I was born to fish, not to play cards!", -- i claim credit for this quote (fireice)
             k_dw_finn_complete3 = "It's as shrimp-le as that!",
             k_dw_finn_complete4 = "That wasn't very clam-plicated!",
 
@@ -175,7 +176,12 @@ return {
             k_dw_twisted_lethal = "Lethal",
 
             k_dw_blotyap1 = "Jr. Incoming!",
-            k_dw_blotyap2 = "!em inim A"
+            k_dw_blotyap2 = "!em inim A",
+
+            k_dw_veespeak1 = "This would be the perfect time for a commercial!",
+            k_dw_veespeak2 = "Question 1: Is this a waste of my time? Probably.",
+            k_dw_veespeak3 = "As simple as binary code!",
+            k_dw_veespeak4 = "I bet Dandy couldn't do this!",
 
         },
         high_scores = {},

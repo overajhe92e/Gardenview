@@ -6,7 +6,7 @@ SMODS.Joker {
     loc_vars = function(self, info_queue, card)
         return { vars = { card.ability.extra.e_mult } }
     end,
-    blueprint_compat = true,
+    blueprint_compat = false,
     calculate = function(self, card, context)
         if context.joker_main then
             return {
