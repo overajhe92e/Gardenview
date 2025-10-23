@@ -245,6 +245,13 @@ return {
             k_dw_dandy_stage3_buy_5 = "About time.",
             k_dw_dandy_stage3_buy_6 = "Heh, you had me worried there for a second.",
 
+            k_candy = "Candy",
+            b_candy_cards = "Candies",
+            k_item = "Item",
+            b_item_cards = "Items",
+            k_trinket = "Trinket",
+            b_trinket_cards = "Trinket",
+
         },
         high_scores = {},
         labels = {
