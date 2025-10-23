@@ -12,7 +12,7 @@ SMODS.ConsumableType {
 }
 SMODS.ConsumableType {
     key = 'candy',
-    collection_rows = {7, 7, 7},
+    collection_rows = {5, 5},
     primary_colour = G.C.CHIPS,
     secondary_colour = HEX('aaaa00'),
 }
