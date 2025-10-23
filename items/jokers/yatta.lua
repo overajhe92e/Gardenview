@@ -1,3 +1,4 @@
+--ripped STRAIGHT from isotypical's junkyard..................
 SMODS.Joker {
     key = 'yatta',
     rarity = 3,
@@ -38,7 +39,7 @@ SMODS.Joker {
                     return true
                 end)
             }))
-            return nil, true -- This is for Joker retrigger purposes
+            return nil, true
         end
     end
 }

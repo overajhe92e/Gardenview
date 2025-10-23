@@ -24,7 +24,8 @@ return {
                         "{C:attention}Resets{} after defeating",
                         "{C:attention}2 Boss Blinds{}",
                         "{C:inactive}(Currently{} {X:red,C:white}X#1#{} {C:inactive}Mult)",
-                        "{C:inactive,s:0.8}Going 3 Shops without buying anything will lead to something bad.{}"
+                        "{C:inactive,s:0.8}Going 3 Shops without buying anything will lead to something bad.{}",
+                        "{C:inactive,s:0.7}#2#/3{}"
                     }
                 }
             },
@@ -116,7 +117,7 @@ return {
             j_dw_shelly = {
                 name = "Shelly Fossilian",
                 text = {
-                    "{X:dark_edition,C:white}^0.95{} Blind requirement",
+                    "{X:dark_edition,C:white}X0.65{} Blind requirement",
                     "for every {C:attention}Joker{} you have"
                 }
             },
@@ -142,6 +143,20 @@ return {
                     "a {C:attentin}Blind{} is {C:attention}skipped{}"
                 }
             },
+            j_dw_barnaby = {
+                name = "Barnaby Wilkers",
+                text = {
+                    "{X:dark_edition,C:white}^1.125{} Chips,",
+                    "{X:dark_edition,C:white}^1.5{} Chips if {C:attention}Finn{} is present."
+                }
+            },
+            j_dw_tw_shelly = {
+                name = "Twisted Shelly",
+                text = {
+                    "{X:default,C:white}X0.9{} Score when a hand is played,",
+                    "but {X:legendary}X2{} Chips and Mult for every joker."
+                }
+            }
         },
         Other = {},
         candy = {
@@ -194,15 +209,41 @@ return {
             k_dw_veespeak1 = "This would be the perfect time for a commercial!",
             k_dw_veespeak2 = "Question 1: Is this a waste of my time? Probably.",
             k_dw_veespeak3 = "As simple as binary code!",
-            k_dw_veespeak4 = "I bet Dandy couldn't do this!", -- meanwhile dandy's stats:
+            k_dw_veespeak4 = "I bet Dandy couldn't do this!",
             
-            -- // Consumable Types ( no touchy :) ) // --
-            k_trinket = "Trinket",
-            b_trinket_cards = "Trinkets",
-            k_item = "Item",
-            b_item_cards = "Items",
-            k_candy = "Candy",
-            b_candy_cards = "Candies",
+            k_dw_dandy_stage1_1 = "So no items? That's ok! I'll be back!",
+            k_dw_dandy_stage1_2 = "I'll have a better stock next time!",
+            k_dw_dandy_stage1_3 = "Short on money? Don't worry! I'm sure you'll have some more later!",
+            k_dw_dandy_stage1_4 = "Saving your Tapes I see, no need to worry! I'll be back with more items!",
+
+            k_dw_dandy_stage2_1 = "Surely there's something wrong, right?",
+            k_dw_dandy_stage2_2 = "We're friends here, right?",
+            k_dw_dandy_stage2_3 = "Friend...?",
+            k_dw_dandy_stage2_4 = "Was it something I said?",
+            k_dw_dandy_stage2_5 = "Surely you must be saving your money for me...",
+            k_dw_dandy_stage2_6 = "What is happening...?",
+
+            k_dw_dandy_stage3_1 = "Be that way.",
+            k_dw_dandy_stage3_2 = "You don't need my help? FINE.",
+            k_dw_dandy_stage3_3 = "......",
+            k_dw_dandy_stage3_4 = "You're REALLY upsetting me now.",
+            k_dw_dandy_stage3_5 = "You're making a big mistake.",
+            k_dw_dandy_stage3_6 = "That money was never yours.",
+            k_dw_dandy_stage3_7 = "You're REALLY making me upset right now.",
+
+            k_dw_dandy_buy_1 = "Oooh! Good choice!",
+            k_dw_dandy_buy_2 = "Yippee!",
+            k_dw_dandy_buy_3 = "Fantastic!",
+            k_dw_dandy_buy_4 = "Thanks for the money!",
+            k_dw_dandy_buy_5 = "Pleasure doin' business! Hehe!",
+            k_dw_dandy_buy_6 = "I'm sure you'll make great use of that!",
+
+            k_dw_dandy_stage3_buy_1 = "For a second I thought you were ignoring me!",
+            k_dw_dandy_stage3_buy_2 = "Now that's more like it.",
+            k_dw_dandy_stage3_buy_3 = "Finally.",
+            k_dw_dandy_stage3_buy_4 = "Good choice on your part.",
+            k_dw_dandy_stage3_buy_5 = "About time.",
+            k_dw_dandy_stage3_buy_6 = "Heh, you had me worried there for a second.",
 
         },
         high_scores = {},
