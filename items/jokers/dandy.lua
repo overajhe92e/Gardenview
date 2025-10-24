@@ -57,7 +57,7 @@ SMODS.Joker {
         if context.end_of_round and context.game_over == false and context.main_eval and context.beat_boss and card.ability.extra.ante_noitem == true and not context.blueprint then
             card.ability.extra.anger = card.ability.extra.anger + 1
         end
-        if context.end_of_round and context.game_over == false and card.ability.extra.reset <= 1 and not context.blueprint then
+        if context.end_of_round and context.game_over == false and card.ability.extra.reset < 1 and not context.blueprint then
             card.ability.extra.xmult = 1
             card.ability.extra.reset = 2
             return { message = "Reset!" }

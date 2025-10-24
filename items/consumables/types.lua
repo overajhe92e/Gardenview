@@ -1,7 +1,7 @@
 SMODS.ConsumableType {
     key = 'item',
     collection_rows = {7, 7, 7},
-    primary_colour = G.C.CHIPS,
+    primary_colour = G.C.GREEN,
     secondary_colour = HEX('aa3311'),
 }
 SMODS.ConsumableType {
@@ -13,6 +13,6 @@ SMODS.ConsumableType {
 SMODS.ConsumableType {
     key = 'candy',
     collection_rows = {7, 7, 7},
-    primary_colour = G.C.CHIPS,
+    primary_colour = G.C.MONEY,
     secondary_colour = HEX('aaaa00'),
 }
