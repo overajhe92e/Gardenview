@@ -16,7 +16,7 @@ return {
         Enhanced = {},
         Joker = {
             j_dw_dandy = {
-                name = 'Dandicus Dancifier',
+                name = 'Dandicus Dancifer',
                 text = {
                     {
                         "Gains {X:red,C:white}X0.25{} Mult for",
@@ -164,10 +164,32 @@ return {
                 name = "Speed Candy",
                 text = {
                     {
-                        "{E:1}Upon use, increases {C:attention,E:1}Walk{E:1} and {C:attention,E:1}Run Speed{E:1} by {C:mult,E:1}25%{E:1} for {E:1,C:green}5 seconds{E:1}.{}"
+                        "Upon use, increases Walk and Run Speed by 25% for 5 seconds."
                     },
                     {
                         "{C:money}+15${}"
+                    }
+                }
+            },
+            c_dw_stealth = {
+                name = "Stealth Candy",
+                text = {
+                    {
+                        "Upon use, increases Stealth by 25% for 8 seconds."
+                    },
+                    {
+                        "{X:attention,C:white}X0.95{} Blind Requirement"
+                    }
+                }
+            },
+            c_dw_extract = {
+                name = "Extraction Speed Candy",
+                text = {
+                    {
+                        "While extracting a machine, increases Extraction Speed by 50% for 5 seconds upon use."
+                    },
+                    {
+                        "Create 1 {C:dark_edition}Negative {C:tarot}Tarot"
                     }
                 }
             },
@@ -244,6 +266,13 @@ return {
             k_dw_dandy_stage3_buy_4 = "Good choice on your part.",
             k_dw_dandy_stage3_buy_5 = "About time.",
             k_dw_dandy_stage3_buy_6 = "Heh, you had me worried there for a second.",
+
+            k_candy = "Candy",
+            b_candy_cards = "Candies",
+            k_item = "Item",
+            b_item_cards = "Items",
+            k_trinket = "Trinket",
+            b_trinket_cards = "Trinket",
 
         },
         high_scores = {},
