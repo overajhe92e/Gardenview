@@ -290,7 +290,7 @@ return {
             k_item = "Item",
             b_item_cards = "Items",
             k_trinket = "Trinket",
-            b_trinket_cards = "Trinket",
+            b_trinket_cards = "Trinkets",
 
         },
         high_scores = {},
