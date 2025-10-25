@@ -174,6 +174,17 @@ return {
                     "for every {C:attention}Joker{} you have",
                     "{C:inactive}( Currently{} {X:blue,C:white}X#2#{} {C:inactive}Chips ){}"
                 }
+            },
+            j_dw_ipadkid = {
+                name = "Toodles",
+                text = {
+                    {
+                        "{E:1}Toodles is the youngest of Dandy's World. She often wants to be apart of the fun, and loves proving that she is capable for her age of helping out!{}"
+                    },
+                    {
+                        "{C:green}1 in 8{} Chance to {C:attention}retrigger 8s{} 8 times."
+                    }
+                }
             }
         },
         Other = {},
@@ -291,6 +302,13 @@ return {
             b_item_cards = "Items",
             k_trinket = "Trinket",
             b_trinket_cards = "Trinkets",
+
+            k_toodles_speak1 = "Hehehe!",
+            k_toodles_speak2 = "Here I go!",
+            k_toodles_speak3 = "Lucky me!",
+            k_toodles_speak4 = "I'm helping!",
+            k_toodles_speak5 = "Again! Again!",
+            k_toodles_speak6 = "Come on! Let's go!"
 
         },
         high_scores = {},
