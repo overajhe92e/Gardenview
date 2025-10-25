@@ -20,7 +20,7 @@ return {
                 text = {
                     {
                         "Gains {X:red,C:white}X0.25{} Mult for",
-                        "every item bought this run",
+                        "every item bought",
                         "{C:attention}Resets{} after defeating",
                         "{C:attention}2 Boss Blinds{}",
                         "{C:inactive}(Currently{} {X:red,C:white}X#1#{} {C:inactive}Mult)",
@@ -33,7 +33,7 @@ return {
                 name = 'Twisted Dandy',
                 text = {
                     "Gains {X:red,C:white}X1{} Mult for",
-                    "every item bought this run.",
+                    "every item bought",
                     "Gains an additional {X:dark_edition,C:white}^0.05{} Mult for",
                     "every {C:money}$1{} you have.",
                     "{C:inactive}(Currently{} {X:red,C:white}X#1#{} {C:inactive}Mult){}",
@@ -43,9 +43,6 @@ return {
             j_dw_astro = {
                 name = 'Astro Novalite',
                 text = {
-                    {
-                        "{C:inactive}Ripped straight from Isotypical's Junkyard.{}"
-                    },
                     {
                         "Adds {C:blue}+#2#{}",
 						"{C:blue}Hands{} and {C:red}Discards{}",
@@ -153,8 +150,29 @@ return {
             j_dw_tw_shelly = {
                 name = "Twisted Shelly",
                 text = {
-                    "{X:default,C:white}X0.9{} Score when a hand is played,",
-                    "but {X:legendary}X2{} Chips and Mult for every joker."
+                    "{X:default,C:attention}^0.8{} Score and {X:default,C:attention}^1.1{} Blind Requirement",
+                    "when a hand is played,",
+                    "but {X:legendary,C:white}X2{} Chips and Mult for every {C:attention}Joker{}"
+                }
+            },
+            j_dw_connie = {
+                name = "Connie",
+                text = {
+                    "teto pear"
+                }
+            },
+            j_dw_connie_alt = {
+                name = "Boolynski",
+                text = {
+                    "teto pear"
+                }
+            },
+            j_dw_tw_connie = {
+                name = "Twisted Connie",
+                text = {
+                    "Gains {X:blue,C:white}X#1#{} Chips",
+                    "for every {C:attention}Joker{} you have",
+                    "{C:inactive}( Currently{} {X:blue,C:white}X#2#{} {C:inactive}Chips ){}"
                 }
             }
         },

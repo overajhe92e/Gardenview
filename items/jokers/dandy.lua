@@ -8,7 +8,7 @@ SMODS.Joker {
             noitem = true,
             anger = 0,
             reset = 2,
-            ante_noitem = true
+            ante_noitem = false
         }
     },
     blueprint_compat = true,
@@ -72,6 +72,7 @@ SMODS.Joker {
                     message = localize("k_dw_dandy_stage2_" .. pseudorandom("stage2", 1, 6)) 
                 }
             elseif card.ability.extra.anger == 3 then
+                card.ability.extra.ante_noitem = true
                 return {
                     message = localize("k_dw_dandy_stage3_" .. pseudorandom("stage3", 1, 6)) 
                 }
