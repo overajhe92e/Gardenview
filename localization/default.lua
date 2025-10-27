@@ -185,6 +185,12 @@ return {
                         "{C:green}1 in 8{} Chance to {C:attention}retrigger 8s{} 8 times."
                     }
                 }
+            },
+            j_dw_eclipse = {
+                name = "Eclipse",
+                text = {
+
+                }
             }
         },
         Other = {},
