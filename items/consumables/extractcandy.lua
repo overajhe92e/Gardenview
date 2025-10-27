@@ -4,6 +4,10 @@ SMODS.Consumable {
     can_use = function(self, card)
         return true
     end,
+    loc_vars = function(self, info_queue, card)
+        -- Add tooltips by appending to info_queue
+        info_queue[#info_queue+1] = G.P_CENTERS.e_negative
+    end,
     use = function(self, card, area, copier)
         local used_card = copier or card
             for i = 1, 1 do
