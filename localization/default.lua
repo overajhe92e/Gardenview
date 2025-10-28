@@ -191,6 +191,13 @@ return {
                 text = {
 
                 }
+            },
+            j_dw_gourdy = {
+                name = "Gourdy Holloway",
+                text = {
+                    "{C:attention}Create{} a random Consumable at the end of round.",
+                    "{C:attention}Create{} another when {C:attention}Boss Blind{} is defeated"
+                }
             }
         },
         Other = {},
@@ -226,6 +233,32 @@ return {
                     {
                         "Create 1 {C:dark_edition}Negative {C:tarot}Tarot"
                     }
+                }
+            },
+        },
+        item = {
+            c_dw_valve = {
+                name = "Valve",
+                text = {
+                    "Instantly {C:attention}win{} blind"
+                }
+            },
+            c_dw_ornaments = {
+                name = "Ornaments",
+                text = {
+                    "{C:green}1 in 4{} chance to create a {C:red}Christmas{} toon"
+                }
+            },
+            c_dw_baskets = {
+                name = "Baskets",
+                text = {
+                    "{C:green}1 in 4{} chance to create an {C:green}Easter{} toon"
+                }
+            },
+            c_dw_pumpkins = {
+                name = "Pumpkins",
+                text = {
+                    "{C:green}1 in 4{} chance to create a {C:attention}Halloween{} toon"
                 }
             },
         },
@@ -314,7 +347,10 @@ return {
             k_toodles_speak3 = "Lucky me!",
             k_toodles_speak4 = "I'm helping!",
             k_toodles_speak5 = "Again! Again!",
-            k_toodles_speak6 = "Come on! Let's go!"
+            k_toodles_speak6 = "Come on! Let's go!",
+
+            k_gourdyspeak1 = "Yay!! Hehehe!",
+            k_gourdyspeak2 = "Trick or Treat!",
 
         },
         high_scores = {},
