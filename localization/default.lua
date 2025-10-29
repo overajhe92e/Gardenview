@@ -187,6 +187,19 @@ return {
                         "she is capable for her age of helping out!"
                     }
                 }
+            },
+            j_dw_eclipse = {
+                name = "Eclipse",
+                text = {
+
+                }
+            },
+            j_dw_gourdy = {
+                name = "Gourdy Holloway",
+                text = {
+                    "{C:attention}Create{} a random Consumable at the end of round.",
+                    "{C:attention}Create{} another when {C:attention}Boss Blind{} is defeated"
+                }
             }, --[[ YOU. ARE. A. MINOR!!!
             also gonna add a prevention to weird mods like hotpot (nursery) and birthlatro 
             ]]
@@ -228,21 +241,6 @@ return {
                 }
             },
         },
-        item = {
-            c_dw_valve = {
-                name = "Valve",
-                text = {
-                    {
-                        "While extracting a machine,",
-                        "Instantly completes it on use."
-                    },
-                    {
-                        "Instantly defeats a {C:attention}Blind{}"
-                    }
-                }
-            }
-        },
-        trinket = {},
         Planet = {},
         Spectral = {},
         Stake = {},
@@ -328,7 +326,10 @@ return {
             k_toodles_speak3 = "Lucky me!",
             k_toodles_speak4 = "I'm helping!",
             k_toodles_speak5 = "Again! Again!",
-            k_toodles_speak6 = "Come on! Let's go!"
+            k_toodles_speak6 = "Come on! Let's go!",
+
+            k_gourdyspeak1 = "Yay!! Hehehe!",
+            k_gourdyspeak2 = "Trick or Treat!",
 
         },
         high_scores = {},
