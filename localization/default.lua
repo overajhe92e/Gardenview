@@ -179,13 +179,17 @@ return {
                 name = "Toodles",
                 text = {
                     {
-                        "{E:1}Toodles is the youngest of Dandy's World. She often wants to be apart of the fun, and loves proving that she is capable for her age of helping out!{}"
+                        "{C:green}#2# in #3#{} Chance to {C:attention}retrigger 8s{} #1# times."
                     },
                     {
-                        "{C:green}1 in 8{} Chance to {C:attention}retrigger 8s{} 8 times."
+                        "{E:1}Toodles is the youngest of Dandy's World.{}",
+                        "She often wants to be apart of the fun, and loves proving that",
+                        "she is capable for her age of helping out!"
                     }
                 }
-            }
+            }, --[[ YOU. ARE. A. MINOR!!!
+            also gonna add a prevention to weird mods like hotpot (nursery) and birthlatro 
+            ]]
         },
         Other = {},
         candy = {
@@ -215,7 +219,8 @@ return {
                 name = "Extraction Speed Candy",
                 text = {
                     {
-                        "While extracting a machine, increases Extraction Speed by 50% for 5 seconds upon use."
+                        "While extracting a machine,",
+                        "increases Extraction Speed by 50% for 5 seconds upon use."
                     },
                     {
                         "Create 1 {C:dark_edition}Negative {C:tarot}Tarot"
@@ -223,6 +228,21 @@ return {
                 }
             },
         },
+        item = {
+            c_dw_valve = {
+                name = "Valve",
+                text = {
+                    {
+                        "While extracting a machine,",
+                        "Instantly completes it on use."
+                    },
+                    {
+                        "Instantly defeats a {C:attention}Blind{}"
+                    }
+                }
+            }
+        },
+        trinket = {},
         Planet = {},
         Spectral = {},
         Stake = {},
