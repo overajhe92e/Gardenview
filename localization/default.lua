@@ -284,7 +284,7 @@ return {
             k_dw_dandy_stage1_1 = "So no items? That's ok! I'll be back!",
             k_dw_dandy_stage1_2 = "I'll have a better stock next time!",
             k_dw_dandy_stage1_3 = "Short on money? Don't worry! I'm sure you'll have some more later!",
-            k_dw_dandy_stage1_4 = "Saving your Tapes I see, no need to worry! I'll be back with more items!",
+            k_dw_dandy_stage1_4 = "Saving your money I see, no need to worry! I'll be back with more items!",
 
             k_dw_dandy_stage2_1 = "Surely there's something wrong, right?",
             k_dw_dandy_stage2_2 = "We're friends here, right?",
