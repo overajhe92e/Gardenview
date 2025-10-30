@@ -200,7 +200,8 @@ return {
                     "{C:attention}Create{} a random Consumable at the end of round.",
                     "{C:attention}Create{} another when {C:attention}Boss Blind{} is defeated"
                 }
-            }, --[[ YOU. ARE. A. MINOR!!!
+            }, --[[ 
+            YOU. ARE. A. MINOR!!!
             also gonna add a prevention to weird mods like hotpot (nursery) and birthlatro 
             ]]
         },
