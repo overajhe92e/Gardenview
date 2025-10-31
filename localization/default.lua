@@ -15,7 +15,7 @@ return {
         Edition = {},
         Enhanced = {},
         Joker = {
-            j_dw_dandy = {
+            j_dw_dandy_pre_encounter = {
                 name = '{C:dw_dandy}Dandicus Dancifer{}',
                 text = {
                     {
@@ -24,6 +24,21 @@ return {
                         "{C:inactive}(Currently{} {X:red,C:white}X#1#{} {C:inactive}Mult)",
                         "{C:inactive,s:0.8}Going 3 Shops without buying anything will do...{}",
                         "{C:inactive,s:0.7}#2#/3{}"
+                    }
+                }
+            },
+            j_dw_dandy_post_encounter = {
+                name = '{C:dw_dandy}Dandicus Dancifer{}',
+                text = {
+                    {
+                        "Gains {X:red,C:white}X0.5{} Mult for",
+                        "every item bought",
+                        "{C:inactive}(Currently{} {X:red,C:white}X#1#{} {C:inactive}Mult)",
+                    },
+                    {
+                        "If {C:red}nothing{} has been bought for {C:attention}3 Shops{}",
+                        "{C:red}Destroys{} {C:attention}ALL Jokers{} and then creates",
+                        "{C:dw_dandy,s:1.1}Twisted Dandy{}"
                     }
                 }
             },

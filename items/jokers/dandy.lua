@@ -12,7 +12,11 @@ SMODS.Joker {
     },
     blueprint_compat = true,
     loc_vars = function(self, info_queue, card)
-        return { vars = { card.ability.extra.xmult, card.ability.extra.anger } }
+        return { 
+            vars = { card.ability.extra.xmult, card.ability.extra.anger },
+            key = G.PROFILES[G.SETTINGS.profile].encountered_tw_dandy == true and "j_dw_dandy_post_encounter" 
+            or G.PROFILES[G.SETTINGS.profile].encountered_tw_dandy == false and "j_dw_dandy_pre_encounter" or nil
+        }
     end,
     calculate = function(self, card, context)
         if context.buying_card and not context.blueprint then
@@ -49,6 +53,7 @@ SMODS.Joker {
                     return true
                 end
             }))
+            G.PROFILES[G.SETTINGS.profile].encountered_tw_dandy = true
         end
         if context.ending_shop and card.ability.extra.noitem == true and not context.blueprint then
             card.ability.extra.anger = card.ability.extra.anger + 1
@@ -60,7 +65,7 @@ SMODS.Joker {
                 return {
                     message = localize("k_dw_dandy_stage2_" .. pseudorandom("stage2", 1, 6))
                 }
-            elseif card.ability.extra.anger == 3 then
+            elseif card.ability.extra.anger >= 3 then
                 card.ability.extra.lockedin = true
                 card.ability.extra.ante_noitem = true
                 return {
