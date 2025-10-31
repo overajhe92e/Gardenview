@@ -38,7 +38,7 @@ SMODS.Joker {
 
 SMODS.Joker {
     key = 'twistedastro',
-    rarity = 'dw_twisted_legendary',
+    rarity = 'dw_twisted_lethal',
     cost = 30,
     atlas = 'dw',
     pos = { x = 2, y = 1 },

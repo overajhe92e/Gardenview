@@ -16,21 +16,19 @@ return {
         Enhanced = {},
         Joker = {
             j_dw_dandy = {
-                name = 'Dandicus Dancifer',
+                name = '{C:dw_dandy}Dandicus Dancifer{}',
                 text = {
                     {
-                        "Gains {X:red,C:white}X0.25{} Mult for",
+                        "Gains {X:red,C:white}X0.5{} Mult for",
                         "every item bought",
-                        "{C:attention}Resets{} after defeating",
-                        "{C:attention}2 Boss Blinds{}",
                         "{C:inactive}(Currently{} {X:red,C:white}X#1#{} {C:inactive}Mult)",
-                        "{C:inactive,s:0.8}Going 3 Shops without buying anything will lead to something bad.{}",
+                        "{C:inactive,s:0.8}Going 3 Shops without buying anything will do...{}",
                         "{C:inactive,s:0.7}#2#/3{}"
                     }
                 }
             },
             j_dw_tw_dandy = {
-                name = 'Twisted Dandy',
+                name = '{C:dw_dandy}Twisted Dandy{}',
                 text = {
                     "Gains {X:red,C:white}X1{} Mult for",
                     "every item bought",
@@ -55,7 +53,7 @@ return {
                 }
             },
             j_dw_twistedastro = {
-				name = "Twisted Astro",
+				name = "{C:dw_dandy}Twisted Astro{}",
 				text = {
 					{
 						"Adds {C:blue}X#2#{} of your current",
@@ -70,7 +68,7 @@ return {
 				}
 			},
             j_dw_dyle = {
-                name = "Dyle Timesly",
+                name = "{C:dw_dandy}Dyle Timesly{}",
                 text = {
                     "Gains {X:red,C:white}X1{} Mult when",
                     "a {C:attention}Blind{} is selected.",
@@ -78,7 +76,7 @@ return {
                 }
             },
             j_dw_tw_dyle = {
-                name = "Twisted Dyle",
+                name = "{C:dw_dandy}Twisted Dyle{}",
                 text = {
                     "Gains {X:red,C:white}X2{} Mult when",
                     "a {C:attention}Blind{} is selected",

@@ -17,10 +17,6 @@ for _, file in ipairs(src) do
     assert(SMODS.load_file("items/jokers/" .. file))()
 end
 
-local function thy()
-    local mod_path = SMODS.current_mod.path
-    assert(SMODS.load_file("items/misc/rarities.lua"))()
-end
 
 local function blindbs()
     local mod_path = SMODS.current_mod.path
@@ -30,6 +26,18 @@ local function blindbs()
         local file_name = files[i].name
         if file_name:sub(-4) == ".lua" then
             assert(SMODS.load_file("items/blinds/" .. file_name))()
+        end
+    end
+end
+
+local function misc()
+    local mod_path = SMODS.current_mod.path
+    local blinds = mod_path .. "items/misc"
+    local files = NFS.getDirectoryItemsInfo(blinds)
+    for i = 1, #files do
+        local file_name = files[i].name
+        if file_name:sub(-4) == ".lua" then
+            assert(SMODS.load_file("items/misc/" .. file_name))()
         end
     end
 end
@@ -46,6 +54,6 @@ local function consume()
     end
 end
 
-thy()
 blindbs()
 consume()
+misc()
