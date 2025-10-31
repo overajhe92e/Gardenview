@@ -19,8 +19,9 @@ SMODS.Joker {
             card.ability.extra.noitem = false
             card.ability.extra.xmult = card.ability.extra.xmult + 0.5
             return {
-                message = localize("k_dw_dandy_buy_" .. pseudorandom("dandybuy", 1, 6)) 
-                or card.ability.extra.anger > 2 and localize("k_dw_dandy_stage3_buy_" .. pseudorandom("stage3dandybuy", 1, 6))
+                message = localize("k_dw_dandy_buy_" .. pseudorandom("dandybuy", 1, 6))
+                    or card.ability.extra.anger > 2 and
+                    localize("k_dw_dandy_stage3_buy_" .. pseudorandom("stage3dandybuy", 1, 6))
             }
         end
         if context.joker_main then
@@ -28,7 +29,7 @@ SMODS.Joker {
                 xmult = card.ability.extra.xmult
             }
         end
-        if context.setting_blind and card.ability.extra.anger < 3 and not context.blueprint then
+        if context.end_of_round and context.game_over == false and context.main_eval and context.beat_boss and not context.blueprint then
             card.ability.extra.noitem = true
         end
         if context.end_of_round and context.game_over == false and context.main_eval and context.beat_boss and card.ability.extra.lockedin == true and not context.blueprint then
@@ -36,7 +37,7 @@ SMODS.Joker {
                 trigger = 'after',
                 delay = 1,
                 func = function()
-                    SMODS.destroy_cards( G.jokers.cards )
+                    SMODS.destroy_cards(G.jokers.cards)
                     return true
                 end
             }))
@@ -44,31 +45,26 @@ SMODS.Joker {
                 trigger = 'after',
                 delay = 1,
                 func = function()
-                    SMODS.add_card{ key = 'j_dw_tw_dandy' }
+                    SMODS.add_card { key = 'j_dw_tw_dandy' }
                     return true
                 end
             }))
-            
-        end
-        if context.end_of_round and context.game_over == false and card.ability.extra.reset < 1 and not context.blueprint then
-            card.ability.extra.xmult = 1
-            card.ability.extra.reset = 2
-            return { message = "Reset!" }
         end
         if context.ending_shop and card.ability.extra.noitem == true and not context.blueprint then
+            card.ability.extra.anger = card.ability.extra.anger + 1
             if card.ability.extra.anger == 1 then
                 return {
                     message = localize("k_dw_dandy_stage1_" .. pseudorandom("stage1", 1, 6))
                 }
             elseif card.ability.extra.anger == 2 then
                 return {
-                    message = localize("k_dw_dandy_stage2_" .. pseudorandom("stage2", 1, 6)) 
+                    message = localize("k_dw_dandy_stage2_" .. pseudorandom("stage2", 1, 6))
                 }
             elseif card.ability.extra.anger == 3 then
                 card.ability.extra.lockedin = true
                 card.ability.extra.ante_noitem = true
                 return {
-                    message = localize("k_dw_dandy_stage3_" .. pseudorandom("stage3", 1, 6)) 
+                    message = localize("k_dw_dandy_stage3_" .. pseudorandom("stage3", 1, 6))
                 }
             end
         end
