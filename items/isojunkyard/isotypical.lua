@@ -14,7 +14,7 @@ SMODS.Joker {
     end,
     calculate = function(self,card,context)
         if context.setting_blind then
-            card.ability.extra.mult = ( card.ability.extra.mult ( card.ability.extra.mult + 1) / 2 ) ^ 1.2
+            card.ability.extra.mult = ( card.ability.extra.mult * ( card.ability.extra.mult + 1) / 2 ) ^ 1.2
         end
         if context.joker_main then
             return {
