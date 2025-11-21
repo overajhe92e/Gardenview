@@ -12,6 +12,13 @@ SMODS.Atlas {
     path = 'dandysworld.png'
 }
 
+SMODS.Atlas {
+    key = 'isojoker',
+    px = 71,
+    py = 95,
+    path = 'isojunk_crossmod_jokers.png'
+}
+
 local src = NFS.getDirectoryItems(SMODS.current_mod.path .. "items/jokers/")
 for _, file in ipairs(src) do
     assert(SMODS.load_file("items/jokers/" .. file))()

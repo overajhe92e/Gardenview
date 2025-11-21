@@ -223,8 +223,18 @@ return {
                 name = "Isotypical",
                 text = {
                     "{X:red,C:white}XMult{} scales with the equation of",
-                    "{X:dark_edition,C:white,s:1.4}( n ( n + 1 ) / 2 ) ^ 1.2{}",
-                    "{C:inactive}Currently{} {X:red,C:white}X#1#{} {C:inactive}Mult{}"
+                    "{X:dark_edition,C:white,s:1.4}( n ( n + 1 ) / 2 ){}",
+                    "{C:inactive}Currently{} {X:red,C:white}X#1#{} {C:inactive}Mult{}",
+                    "{C:dark_edition,s:0.8,E:1}Mod Origin : Isotypical's Junkyard{}",
+                    "{C:dark_edition,s:0.8,E:1}Character : Solinium{}",
+                    "{C:dark_edition,s:0.8,E:1}Character Origin : Dog Man{}"
+                }
+            },
+            j_dw_tw_iso = {
+                name = "Twisted Solinium",
+                text = {
+                    "Current score is converted into money",
+                    "with the equation {X:dark_edition,C:white}log(n^0.1){}"
                 }
             },
             j_dw_fireice = {
@@ -232,7 +242,8 @@ return {
                 text = {
                     "{X:dark_edition,C:white}^Chips{} scales with the equation of",
                     "{X:dark_edition,C:white}(((2n^2+4)/(2+n))/0.25)/8{}",
-                    "{C:inactive}Currently{} {X:dark_edition,C:white}^#1#{} {C:inactive}Chips{}"
+                    "{C:inactive}Currently{} {X:dark_edition,C:white}^#1#{} {C:inactive}Chips{}",
+                    "{C:dark_edition,s:0.8,E:1}Mod Origin : Balatro Dash{}",
                 }
             }
         },
