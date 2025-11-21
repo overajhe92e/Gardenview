@@ -33,6 +33,11 @@ local T5 = SMODS.Gradient {
     cycle = '5'
 }
 
+local oo = SMODS.Gradient {
+    key = 'oo',
+    colours = { HEX('8c0900'), HEX('000000')}
+}
+
 SMODS.Rarity {
     key = "twisted_common",
     pools = {
@@ -96,4 +101,28 @@ SMODS.Rarity {
     get_weight = function(self, weight, object_type)
         return weight
     end,
+}
+
+SMODS.Rarity {
+    key = "omega",
+    pools = {
+        ["Joker"] = true
+    },
+    default_weight = 0,
+    badge_colour = oo,
+    get_weight = function(self, weight, object_type)
+        return weight
+    end
+}
+
+SMODS.Rarity {
+    key = "mythic",
+    pools = {
+        ["Joker"] = true
+    },
+    default_weight = 0,
+    badge_colour = HEX('ffe5a0'),
+    get_weight = function(self, weight, object_type)
+        return weight
+    end
 }

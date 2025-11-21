@@ -204,7 +204,9 @@ return {
             j_dw_eclipse = {
                 name = "Eclipse",
                 text = {
-
+                    "{C:green}1 in 8{} chance to disable a {C:attention}Boss Blind{}",
+                    "{C:green}1 in 4{} chance to disable a {C:attention}Showdown Blind{}",
+                    "{C:green}Guaranteed{} chance to disable {C:attention}Blackout{}"
                 }
             },
             j_dw_gourdy = {
@@ -217,6 +219,22 @@ return {
             YOU. ARE. A. MINOR!!!
             also gonna add a prevention to weird mods like hotpot (nursery) and birthlatro 
             ]]
+            j_dw_iso = {
+                name = "Isotypical",
+                text = {
+                    "{X:red,C:white}XMult{} scales with the equation of",
+                    "{X:dark_edition,C:white,s:1.4}( n ( n + 1 ) / 2 ) ^ 1.2{}",
+                    "{C:inactive}Currently{} {X:red,C:white}X#1#{} {C:inactive}Mult{}"
+                }
+            },
+            j_dw_fireice = {
+                name = "FireIce",
+                text = {
+                    "{X:dark_edition,C:white}^Chips{} scales with the equation of",
+                    "{X:dark_edition,C:white}(((2n^2+4)/(2+n))/0.25)/8{}",
+                    "{C:inactive}Currently{} {X:dark_edition,C:white}^#1#{} {C:inactive}Chips{}"
+                }
+            }
         },
         Other = {},
         candy = {
@@ -285,6 +303,8 @@ return {
             k_dw_twisted_rare = "Twisted Rare",
             k_dw_twisted_legendary = "Twisted Legendary",
             k_dw_twisted_lethal = "Lethal",
+            k_dw_omega = "Absurd",
+            k_dw_mythic = "Mythic",
 
             k_dw_blotyap1 = "Jr. Incoming!",
             k_dw_blotyap2 = "!em inim A",
@@ -353,6 +373,8 @@ return {
             dw_twisted_rare = "Twisted Rare",
             dw_twisted_legendary = "Twisted Legendary",
             dw_twisted_lethal = "Lethal",
+            dw_omega = "Absurd",
+            dw_mythic = "Mythic"
         },
         poker_hand_descriptions = {},
         poker_hands = {},

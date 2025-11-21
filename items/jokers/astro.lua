@@ -1,4 +1,4 @@
-SMODS.Joker {
+SMODS.Joker { --why is there a robot cat trying to claw at me
     key = 'astro',
     rarity = 4,
     cost = 30,
