@@ -9,7 +9,7 @@
 	"description": "Placeholder Description",
 	"prefix": "dw",
 	"main_file": "main.lua",
-	"priority": 0,
+	"priority": 2002,
 	"badge_colour": "f5f2ce",
 	"badge_text_colour": "b0e2b6",
 	"version": "0.0.0-INITIAL",

@@ -245,6 +245,12 @@ return {
                     "{C:inactive}Currently{} {X:dark_edition,C:white}^#1#{} {C:inactive}Chips{}",
                     "{C:dark_edition,s:0.8,E:1}Mod Origin : Balatro Dash{}",
                 }
+            },
+            j_dw_aberrantfireice = {
+                name = "'Aberrant' FireIce",
+                text = {
+                    "{C:purple,E:1,s:3.5}?????{}"
+                }
             }
         },
         Other = {},
@@ -315,7 +321,7 @@ return {
             k_dw_twisted_legendary = "Twisted Legendary",
             k_dw_twisted_lethal = "Lethal",
             k_dw_omega = "Absurd",
-            k_dw_mythic = "Mythic",
+            k_dw_fatal = "Fatal",
 
             k_dw_blotyap1 = "Jr. Incoming!",
             k_dw_blotyap2 = "!em inim A",
@@ -385,7 +391,7 @@ return {
             dw_twisted_legendary = "Twisted Legendary",
             dw_twisted_lethal = "Lethal",
             dw_omega = "Absurd",
-            dw_mythic = "Mythic"
+            dw_fatal = "Fatal"
         },
         poker_hand_descriptions = {},
         poker_hands = {},

@@ -38,6 +38,13 @@ local oo = SMODS.Gradient {
     colours = { HEX('8c0900'), HEX('000000')}
 }
 
+local fatal = SMODS.Gradient {
+    key = 'fatal',
+    colours = { HEX('ff0000'), HEX('000000')},
+    interpolation = 'linear',
+    cycle = '5'
+}
+
 SMODS.Rarity {
     key = "twisted_common",
     pools = {
@@ -116,12 +123,12 @@ SMODS.Rarity {
 }
 
 SMODS.Rarity {
-    key = "mythic",
+    key = "fatal",
     pools = {
         ["Joker"] = true
     },
     default_weight = 0,
-    badge_colour = HEX('ffe5a0'),
+    badge_colour = fatal,
     get_weight = function(self, weight, object_type)
         return weight
     end

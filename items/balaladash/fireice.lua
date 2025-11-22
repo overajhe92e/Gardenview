@@ -1,7 +1,7 @@
 SMODS.Joker {
     key = 'fireice',
-    cost = 99,
-    rarity = 'dw_mythic',
+    cost = 842,
+    rarity = 'dw_omega',
     config = {
         extra = {
             mult = 1
@@ -23,3 +23,27 @@ SMODS.Joker {
         end
     end
 }
+SMODS.Joker {
+    key = 'aberrantfireice',
+    cost = 842842,
+    rarity = 'dw_fatal',
+    config = {
+        extra = {
+            mult = 1
+        }
+    },
+    loc_vars = function(self, info_queue, card)
+        return {
+            vars = { card.ability.extra.mult }
+        }
+    end,
+    calculate = function(self,card,context)
+
+    end
+}
+
+SMODS.Joker:take_ownership("gj_vessel", {
+    cost = -1
+},
+false
+)

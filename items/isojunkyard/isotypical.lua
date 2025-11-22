@@ -33,7 +33,7 @@ SMODS.Joker {
 SMODS.Joker {
     key = 'tw_iso',
     cost = 50,
-    rarity = 'dw_omega',
+    rarity = 'dw_fatal',
     config = {
         extra = {
             mult = 3
