@@ -215,16 +215,20 @@ return {
                     "{C:attention}Create{} a random Consumable at the end of round.",
                     "{C:attention}Create{} another when {C:attention}Boss Blind{} is defeated"
                 }
-            }, --[[ 
+            }, 
+            --[[ 
             YOU. ARE. A. MINOR!!!
             also gonna add a prevention to weird mods like hotpot (nursery) and birthlatro 
             ]]
             j_dw_iso = {
                 name = "Isotypical",
                 text = {
-                    "{X:red,C:white}XMult{} scales with the equation of",
-                    "{X:dark_edition,C:white,s:1.4}( n ( n + 1 ) / 2 ){}",
-                    "{C:inactive}Currently{} {X:red,C:white}X#1#{} {C:inactive}Mult{}",
+                    "{X:red,C:white}XMult{} uses the equation",
+                    "{X:dark_edition,C:white,s:1.3}n*(1+SCORE)^0.1{}",
+                    "n is increased by {C:attention}+1{} when",
+                    "a {C:attention}Blind{} is selected",
+                    "{C:attention}n is currently: #1#{}",
+                    "{C:inactive}Currently{} {X:red,C:white}X#2#{} {C:inactive}Mult{}",
                     "{C:dark_edition,s:0.8,E:1}Mod Origin : Isotypical's Junkyard{}",
                     "{C:dark_edition,s:0.8,E:1}Character : Solinium{}",
                     "{C:dark_edition,s:0.8,E:1}Character Origin : Dog Man{}"
@@ -233,8 +237,10 @@ return {
             j_dw_tw_iso = {
                 name = "Twisted Solinium",
                 text = {
-                    "Current score is converted into money",
-                    "with the equation {X:dark_edition,C:white}log(n^0.1){}"
+                    "At the end of the round",
+                    "your {C:attention}Score{} is converted to {C:money}Money{}",
+                    "with the equation {X:dark_edition,C:white}log(n^0.1){}",
+                    "{C:inactive}(Rounded up){}"
                 }
             },
             j_dw_fireice = {
