@@ -7,6 +7,8 @@ SMODS.Joker {
             xmult = 1
         }
     },
+    atlas = 'dw',
+    pos = {x=8,y=0},
     loc_vars = function(self, info_queue, card)
         return { vars = { card.ability.extra.xmult } }
     end,
@@ -31,6 +33,8 @@ SMODS.Joker {
             xmult = 1
         }
     },
+    atlas = 'dw',
+    pos = {x=8,y=0},
     loc_vars = function(self, info_queue, card)
         return { vars = { card.ability.extra.xmult } }
     end,

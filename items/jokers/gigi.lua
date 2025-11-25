@@ -2,6 +2,8 @@ SMODS.Joker {
     key = 'gigi',
     cost = 6,
     rarity = 2,
+    atlas = 'dw',
+    pos = {x=8,y=0},
     calculate = function(self, card, context)
         if context.skip_blind then
             if SMODS.pseudorandom_probability(card, "dw_gigi", 1, 2) then

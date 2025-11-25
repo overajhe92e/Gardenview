@@ -9,12 +9,12 @@ target = "globals.lua"
 pattern = "DARK_EDITION = {0,0,0,1},"
 position = "after"
 payload = """
-DANDYRED = HEX("ff5264"),
-DANDYORANGE = HEX("feb052"),
-DANDYYELLOW = HEX("f6ff52"),
-DANDYGREEN = HEX("53ff5c"),
-DANDYBLUE = HEX("5380ff"),
-DANDYPURPLE = HEX("9b52ff"),
+DANDYRED = HEX("c36063"),
+DANDYORANGE = HEX("ce9153"),
+DANDYYELLOW = HEX("cfcc59"),
+DANDYGREEN = HEX("5ecc59"),
+DANDYBLUE = HEX("5c90ca"),
+DANDYPURPLE = HEX("854ecd"),
 """
 match_indent = true
 

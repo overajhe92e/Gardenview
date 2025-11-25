@@ -3,6 +3,9 @@ SMODS.Joker {
     cost = 6,
     rarity = 3,
     config = { extra = { e_mult = 1.15 } },
+    atlas = 'dw',
+    pos = {x=2,y=0},
+    soul_pos = {x=3,y=0},
     loc_vars = function(self, info_queue, card)
         return { vars = { card.ability.extra.e_mult } }
     end,

@@ -2,6 +2,9 @@ SMODS.Joker {
     key = "gourdy",
     cost = 2,
     rarity = 1,
+    atlas = 'dw',
+    pos = {x=0,y=1},
+    soul_pos = {x=1,y=1},
     calculate = function(self, card, context)
     G.C.gourd = HEX("aaff00")
     if context.end_of_round and context.main_eval and G.GAME.blind.boss  then

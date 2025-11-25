@@ -7,6 +7,9 @@
 SMODS.Joker {
     key = "ipadkid",
     config = { extra = { odds = 8, repetitions = 8 } },
+    atlas = 'dw',
+    pos = {x=0,y=2},
+    soul_pos = {x=1,y=2},
     rarity = 2,
     update = function(self,dt)
         -- if next(SMODS.find_mod("HotPotato")) then

@@ -3,6 +3,9 @@ SMODS.Joker {
     cost = 0,
     rarity = 2,
     config = { extra = { lifetime = 4, x_mult = 1.25, start_dissolve = 0, y = 0 } }, -- +1 lifetime since on creation blotjr loses durability somehow
+    atlas = 'dw',
+    pos = {x=2,y=0},
+    soul_pos = {x=6,y=2},
     in_pool = function(self, args)
         return false
     end,

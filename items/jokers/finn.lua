@@ -7,6 +7,8 @@ SMODS.Joker {
             active = 'Inactive'
         }
     },
+    atlas = 'dw',
+    pos = {x=8,y=0},
     loc_vars = function(self, info_queue, card)
         return { vars = { card.ability.extra.active } }
     end,
@@ -44,6 +46,8 @@ SMODS.Joker {
     key = "barnaby",
     cost = 14,
     rarity = 3,
+    atlas = 'dw',
+    pos = {x=8,y=0},
     calculate = function(self, card, context)
         if context.joker_main and next(SMODS.find_card("j_dw_finn")) then
             return {

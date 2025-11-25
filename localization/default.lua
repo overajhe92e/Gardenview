@@ -165,19 +165,20 @@ return {
                 text = {
                     "{X:default,C:attention}^0.8{} Score and {X:default,C:attention}^1.1{} Blind Requirement",
                     "when a hand is played,",
-                    "but {X:legendary,C:white}X2{} Chips and Mult for every {C:attention}Joker{}"
+                    "{X:legendary,C:white}X2{} Chips and Mult for every {C:attention}Joker{}"
                 }
             },
             j_dw_connie = {
                 name = "Connie",
                 text = {
-                    "teto pear"
+                    "POSESSION!!!",
+                    "{C:red}Ability not implemented!{}"
                 }
             },
             j_dw_connie_alt = {
                 name = "Boolynski",
                 text = {
-                    "teto pear"
+                    "Gourdy, you can't deadname Connie like that!"
                 }
             },
             j_dw_tw_connie = {
@@ -195,9 +196,8 @@ return {
                         "{C:green}#2# in #3#{} Chance to {C:attention}retrigger 8s{} #1# times."
                     },
                     {
-                        "{E:1}Toodles is the youngest of Dandy's World.{}",
-                        "She often wants to be apart of the fun, and loves proving that",
-                        "she is capable for her age of helping out!"
+                        "Gee I WONDER what her ability is referencing.",
+                        "- Isotypical"
                     }
                 }
             },
@@ -220,7 +220,7 @@ return {
             YOU. ARE. A. MINOR!!!
             also gonna add a prevention to weird mods like hotpot (nursery) and birthlatro 
             ]]
-            j_dw_iso_pl = {
+            j_dw_iso = {
                 name = "Solinium (Toon-ified)",
                 text = {
                     {
@@ -236,7 +236,7 @@ return {
                     },
                 }
             },
-            j_dw_iso = {
+            j_dw_iso_bullshit = {
                 name = "{f:dw_balling}Solinium (Toon-ified){}",
                 text = {
                     {

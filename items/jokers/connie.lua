@@ -1,7 +1,9 @@
 SMODS.Joker {
     key = "connie",
     rarity = 2,
-    cost = 1
+    cost = 1,
+    atlas = 'dw',
+    pos = {x=8,y=0},
 }
 
 SMODS.Joker {
@@ -13,6 +15,8 @@ SMODS.Joker {
             xmult = 1
         }
     },
+    atlas = 'dw',
+    pos = {x=8,y=0},
     loc_vars = function(self,info_queue,card)
         return { vars = { card.ability.extra.xmult, card.ability.extra.xmult * (G.jokers and #G.jokers.cards or 0) }}
     end,

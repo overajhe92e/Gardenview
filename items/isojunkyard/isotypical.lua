@@ -13,8 +13,8 @@ SMODS.Joker {
     loc_vars = function(self, info_queue, card)
         local fuckery = card.ability.extra.mult * (1 + to_big(G.GAME.chips)) ^ 0.1
         return {
-            text_colour = G.C.WHITE,
-            vars = { box_colours = { G.C.DANDYRED, G.C.DANDYORANGE, G.C.DANDYYELLOW, G.C.DANDYGREEN, G.C.DANDYBLUE, G.C.DANDYPURPLE }, card.ability.extra.mult, fuckery }
+            -- text_colour = G.C.WHITE,
+            vars = { --[[box_colours = { G.C.DANDYRED, G.C.DANDYORANGE, G.C.DANDYYELLOW, G.C.DANDYGREEN, G.C.DANDYBLUE, G.C.DANDYPURPLE },]] card.ability.extra.mult, fuckery }
         }
     end,
     calculate = function(self, card, context)

@@ -7,6 +7,8 @@ SMODS.Joker {
             blinds = 0.65
         }
     },
+    atlas = 'dw',
+    pos = {x=8,y=0},
     calculate = function(self, card, context)
         if context.setting_blind then
             for i = 1, #G.jokers.cards do
@@ -23,6 +25,8 @@ SMODS.Joker {
     cost = 32,
     rarity = 'dw_twisted_legendary',
     config = {},
+    atlas = 'dw',
+    pos = {x=8,y=0},
     calculate = function(self, card, context)
         if context.joker_main then
             G.GAME.chips = G.GAME.chips ^ 0.8
