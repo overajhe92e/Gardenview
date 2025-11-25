@@ -1,0 +1,34 @@
+[manifest]
+version = "0.0.1"
+dump_lua = true
+priority = 1000
+
+[[patches]]
+[patches.pattern]
+target = "globals.lua"
+pattern = "DARK_EDITION = {0,0,0,1},"
+position = "after"
+payload = """
+DANDYRED = HEX("ff5264"),
+DANDYORANGE = HEX("feb052"),
+DANDYYELLOW = HEX("f6ff52"),
+DANDYGREEN = HEX("53ff5c"),
+DANDYBLUE = HEX("5380ff"),
+DANDYPURPLE = HEX("9b52ff"),
+"""
+match_indent = true
+
+[[patches]]
+[patches.pattern]
+target = "functions/misc_functions.lua"
+pattern = "dark_edition = G.C.DARK_EDITION,"
+position = "after"
+payload = """
+dandy_red = G.C.DANDYRED,
+dandy_orange = G.C.DANDYORANGE,
+dandy_yellow = G.C.DANDYYELLOW,
+dandy_green = G.C.DANDYGREEN,
+dandy_blue = G.C.DANDYBLUE,
+dandy_purple = G.C.DANDYPURPLE,
+"""
+match_indent = true
