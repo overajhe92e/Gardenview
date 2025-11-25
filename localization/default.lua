@@ -220,9 +220,10 @@ return {
             YOU. ARE. A. MINOR!!!
             also gonna add a prevention to weird mods like hotpot (nursery) and birthlatro 
             ]]
-            j_dw_iso = {
-                name = "Isotypical",
+            j_dw_iso_pl = {
+                name = "Solinium (Toon-ified)",
                 text = {
+                    {
                     "{X:red,C:white}XMult{} uses the equation",
                     "{X:dark_edition,C:white,s:1.3}n*(1+SCORE)^0.1{}",
                     "n is increased by {C:attention}+1{} when",
@@ -232,6 +233,37 @@ return {
                     "{C:dark_edition,s:0.8,E:1}Mod Origin : Isotypical's Junkyard{}",
                     "{C:dark_edition,s:0.8,E:1}Character : Solinium{}",
                     "{C:dark_edition,s:0.8,E:1}Character Origin : Dog Man{}"
+                    },
+                }
+            },
+            j_dw_iso = {
+                name = "{f:dw_balling}Solinium (Toon-ified){}",
+                text = {
+                    {
+                        "{f:dw_balling}Health{}",
+                        "{f:dw_balling}<3{}"                        
+                    },
+                    {
+                        "{f:dw_balling}Skill Check{}",
+                        "{f:dw_balling}(*)(*)(*)(*)(*){}"
+                    },
+                    {
+                        "{f:dw_balling}Movement Speed{}",
+                        "{f:dw_balling}(*)(*)(*)(*){}"
+                    },
+                    {
+                        "{f:dw_balling}Stamina{}",
+                        "{f:dw_balling}(*)(*)(*){}"
+                    },
+                    {
+                        "{f:dw_balling}Stealth{}",
+                        "{f:dw-balling}What's that?{}",
+                        "{f:dw_balling}(*){}"
+                    },
+                    {
+                        "{f:dw_balling}Extraction Speed{}",
+                        "{f:dw_balling}(*)(*)(*)(*)(*){}"
+                    },
                 }
             },
             j_dw_tw_iso = {
