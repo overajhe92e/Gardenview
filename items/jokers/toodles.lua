@@ -1,5 +1,5 @@
 -- function begone()
---     error("\"Huh..? What do you mean by impregnation?\" ( Uninstall OR Disable Hotpot! )")
+--     error("\"Huh? What is impregnation?\" ( Uninstall OR Disable Hotpot! )")
 -- end
 
 --delete this function later
@@ -12,6 +12,9 @@ SMODS.Joker {
         -- if next(SMODS.find_mod("HotPotato")) then
         --     begone()
         -- end
+        --[[
+        THIS WILL HURT. DESTROY! YOU CAN'T ESCAPE! BE GONE!
+        ]]
     end,
     loc_vars = function(self,info_queue,card)
         local numerator, denominator = SMODS.get_probability_vars(card, 1, card.ability.extra.odds, 'j_dw_toodles')
