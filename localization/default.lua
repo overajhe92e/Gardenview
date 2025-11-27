@@ -10,6 +10,13 @@ return {
                     "Disabling Blind will multiply",
                     "current requirement by X12"
                 }
+            },
+            bl_dw_blackout = {
+                name = "Blackout",
+                text = {
+                    "Flips all Jokers",
+                    "Cards are drawn face down"
+                }
             }
         },
         Edition = {},
@@ -201,11 +208,24 @@ return {
                     }
                 }
             },
+            j_dw_tw_ipadkid = {
+                name = "Twisted Toodles",
+                text = {
+                    {
+                        "Retriggers {C:attention}ALL{} scored cards {C:attention}#2#{} times",
+                        "{C:attention}8s{} get retriggered an extra {C:attention}#1#{} times"
+                    },
+                    {
+                        "Alright Isotypical, {C:red}pack it up{}",
+                        "with the {C:red}Almanac jokes.{}",
+                    }
+                }
+            },
             j_dw_eclipse = {
                 name = "Eclipse",
                 text = {
-                    "{C:green}1 in 8{} chance to disable a {C:attention}Boss Blind{}",
-                    "{C:green}1 in 4{} chance to disable a {C:attention}Showdown Blind{}",
+                    "{C:green}#1# in #2#{} chance to disable a {C:attention}Boss Blind{}",
+                    "{C:green}#3# in #4#{} chance to disable a {C:attention}Showdown Blind{}",
                     "{C:green}Guaranteed{} chance to disable {C:attention}Blackout{}"
                 }
             },
@@ -289,6 +309,12 @@ return {
                 text = {
                     "{C:purple,E:1,s:3.5}?????{}"
                 }
+            },
+            j_dw_cone = {
+                name = "Traffic Cone",
+                text = {
+                    "Prevents {C:attention}Twisted Debuffs{} from applying"
+                }
             }
         },
         Other = {},
@@ -331,7 +357,22 @@ return {
         Planet = {},
         Spectral = {},
         Stake = {},
-        Tag = {},
+        Tag = {
+            tag_dw_heart = {
+                name = "Heart",
+                text = {
+                    "Saves user from 1 Gameover"
+                }
+            },
+            tag_dw_broken_heart = {
+                name = "Ichor Heart",
+                text = {
+                    "Upon obtaining, immediately",
+                    "uses up 1 heart {C:inactive}(If Possible){}",
+                    "If you have 3 Ichor Hearts, die."
+                }
+            }
+        },
         Tarot = {},
         Voucher = {},
     },
