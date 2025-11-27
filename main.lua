@@ -71,6 +71,19 @@ local function consume()
     end
 end
 
+local function tag()
+    local mod_path = SMODS.current_mod.path
+    local blinds = mod_path .. "items/tags"
+    local files = NFS.getDirectoryItemsInfo(blinds)
+    for i = 1, #files do
+        local file_name = files[i].name
+        if file_name:sub(-4) == ".lua" then
+            assert(SMODS.load_file("items/tags/" .. file_name))()
+        end
+    end
+end
+
+tag()
 blindbs()
 consume()
 misc()
