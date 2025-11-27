@@ -27,6 +27,7 @@ local purplegrad = SMODS.Gradient {
 
 SMODS.Blind {
     key = 'TIMES_UP',
+    atlas = 'dw_timesup',
     dollars = 8,
     mult = 6,
     boss = { min = 8, showdown = true },

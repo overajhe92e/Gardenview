@@ -18,6 +18,14 @@ SMODS.Atlas {
     py = 95,
     path = 'isojunk_crossmod_jokers.png'
 }
+SMODS.Atlas {
+    key = 'timesup',
+    px = 34,
+    py = 34,
+    path = 'timesup.png',
+    atlas_table = 'ANIMATION_ATLAS',
+    frames = 24
+}
 
 SMODS.Font({
     key = 'balling',
