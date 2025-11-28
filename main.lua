@@ -24,7 +24,7 @@ SMODS.Atlas {
     py = 34,
     path = 'timesup.png',
     atlas_table = 'ANIMATION_ATLAS',
-    frames = 24
+    frames = 21
 }
 
 SMODS.Font({
