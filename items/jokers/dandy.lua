@@ -11,8 +11,16 @@ SMODS.Joker {
         }
     },
     atlas = 'dw',
-    pos = {x=8,y=0},
+    pos = {x=2,y=2},
+    soul_pos = {x=3,y=2},
     blueprint_compat = true,
+    update = function(self, card, dt)
+        if card.ability.extra.anger == 2 then
+            card.children.floating_sprite:set_sprite_pos { x = 6, y = 1 }
+        elseif card.ability.extra.anger == 3 then
+            card.children.floating_sprite:set_sprite_pos { x = 6, y = 0 }
+        end
+    end,
     loc_vars = function(self, info_queue, card)
         return { 
             vars = { card.ability.extra.xmult, card.ability.extra.anger },
