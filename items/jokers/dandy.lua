@@ -11,8 +11,12 @@ SMODS.Joker {
         }
     },
     atlas = 'dw',
+<<<<<<< HEAD
     pos = {x=2,y=2},
     soul_pos = {x=3,y=2},
+=======
+    pos = { x = 8, y = 0 },
+>>>>>>> 76d70fea24217ff4e4760ef2b1145dbcf39469c0
     blueprint_compat = true,
     update = function(self, card, dt)
         if card.ability.extra.anger == 2 then
@@ -22,10 +26,10 @@ SMODS.Joker {
         end
     end,
     loc_vars = function(self, info_queue, card)
-        return { 
+        return {
             vars = { card.ability.extra.xmult, card.ability.extra.anger },
-            key = G.PROFILES[G.SETTINGS.profile].encountered_tw_dandy == true and "j_dw_dandy_post_encounter" 
-            or G.PROFILES[G.SETTINGS.profile].encountered_tw_dandy == false and "j_dw_dandy_pre_encounter" or nil
+            key = G.PROFILES[G.SETTINGS.profile].encountered_tw_dandy == true and "j_dw_dandy_post_encounter"
+                or G.PROFILES[G.SETTINGS.profile].encountered_tw_dandy == false and "j_dw_dandy_pre_encounter" or nil
         }
     end,
     calculate = function(self, card, context)
@@ -55,15 +59,29 @@ SMODS.Joker {
                     return true
                 end
             }))
-            G.E_MANAGER:add_event(Event({
-                trigger = 'after',
-                delay = 1,
-                func = function()
-                    SMODS.add_card { key = 'j_dw_tw_dandy' }
-                    return true
-                end
-            }))
-            G.PROFILES[G.SETTINGS.profile].encountered_tw_dandy = true
+            if next(SMODS.find_card("j_dw_astro")) then
+                G.E_MANAGER:add_event(Event({
+                    trigger = 'after',
+                    delay = 1,
+                    func = function()
+                        SMODS.add_card { key = 'j_dw_tw_dandy' }
+                        SMODS.add_card { key = 'j_dw_twistedastro' }
+                        return true
+                    end
+                }))
+                G.PROFILES[G.SETTINGS.profile].encountered_tw_dandy = true
+            else
+                G.E_MANAGER:add_event(Event({
+                    trigger = 'after',
+                    delay = 1,
+                    func = function()
+                        SMODS.add_card { key = 'j_dw_tw_dandy' }
+                        SMODS.add_card { key = 'j_dw_twistedastro' }
+                        return true
+                    end
+                }))
+                G.PROFILES[G.SETTINGS.profile].encountered_tw_dandy = true
+            end
         end
         if context.ending_shop and card.ability.extra.noitem == true and not context.blueprint then
             card.ability.extra.anger = card.ability.extra.anger + 1
@@ -97,7 +115,7 @@ SMODS.Joker {
         },
     },
     atlas = 'dw',
-    pos = {x=8,y=0},
+    pos = { x = 8, y = 0 },
     blueprint_compat = true,
     loc_vars = function(self, info_queue, card)
         return { vars = { card.ability.extra.xmult, card.ability.extra.wake_up_its_talisman_check_time * math.max(0, (G.GAME.dollars or 0) + (G.GAME.dollar_buffer or 0)) + 1 } }

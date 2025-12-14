@@ -14,7 +14,7 @@ SMODS.Joker { --why is there a robot cat trying to claw at me
     loc_vars = function(self, info_queue, card)
         local planets_used = 0
         for k, v in pairs(G.GAME.consumeable_usage) do if v.set == 'Planet' then planets_used = planets_used + 1 end end
-        return { vars = { card.ability.extra.multi, (planets_used+1) } }
+        return { vars = { card.ability.extra.multi, (planets_used + 1) } }
     end,
     calculate = function(self, card, context)
         if context.setting_blind then
@@ -27,7 +27,7 @@ SMODS.Joker { --why is there a robot cat trying to claw at me
                     ease_discard(G.GAME.current_round.discards_left + (planets_used))
                     ease_hands_played(G.GAME.current_round.hands_left + (planets_used))
                     SMODS.calculate_effect(
-                        { message = '+' .. tostring(planets_used+1) .. ' Hands & Discards' },
+                        { message = '+' .. tostring(planets_used + 1) .. ' Hands & Discards' },
                         context.blueprint_card or card)
                     return true
                 end
@@ -52,24 +52,40 @@ SMODS.Joker {
     loc_vars = function(self, info_queue, card)
         local planets_used = 0
         for k, v in pairs(G.GAME.consumeable_usage) do if v.set == 'Planet' then planets_used = planets_used + 1 end end
-        return { vars = { card.ability.extra.multi, (planets_used+1) } }
+        return {
+            vars = { card.ability.extra.multi, (planets_used + 1) },
+            key = starspace_mod == false and "j_dw_twistedastro" or starspace_mod == true and "j_dw_twistedastro_stpc"
+        }
     end,
     calculate = function(self, card, context)
-        if context.setting_blind then
-            G.E_MANAGER:add_event(Event({
-                func = function()
-                    local planets_used = 0
-                    for k, v in pairs(G.GAME.consumeable_usage) do
-                        if v.set == 'Planet' then planets_used = planets_used + 1 end
+        if starspace_mod == false then
+            if context.setting_blind then
+                G.E_MANAGER:add_event(Event({
+                    func = function()
+                        local planets_used = 0
+                        for k, v in pairs(G.GAME.consumeable_usage) do
+                            if v.set == 'Planet' then planets_used = planets_used + 1 end
+                        end
+                        ease_discard(G.GAME.current_round.discards_left * (planets_used + 1))
+                        ease_hands_played(G.GAME.current_round.hands_left * (planets_used + 1))
+                        SMODS.calculate_effect(
+                            { message = '+X' .. tostring(planets_used + 1) .. ' Hands & Discards' },
+                            context.blueprint_card or card)
+                        return true
                     end
-                    ease_discard(G.GAME.current_round.discards_left * (planets_used + 1))
-                    ease_hands_played(G.GAME.current_round.hands_left * (planets_used + 1))
-                    SMODS.calculate_effect(
-                        { message = '+X' .. tostring(planets_used+1) .. ' Hands & Discards' },
-                        context.blueprint_card or card)
-                    return true
+                }))
+            end
+        end
+        if starspace_mod == true then
+            if context.joker_main then
+                local planets_used = 0
+                for k, v in pairs(G.GAME.consumeable_usage) do
+                    if v.set == 'Planet' then planets_used = planets_used + 1 end
                 end
-            }))
+                return {
+                    eechips = planets_used + 1
+                }
+            end
         end
     end
 }
