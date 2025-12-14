@@ -11,12 +11,8 @@ SMODS.Joker {
         }
     },
     atlas = 'dw',
-<<<<<<< HEAD
     pos = {x=2,y=2},
     soul_pos = {x=3,y=2},
-=======
-    pos = { x = 8, y = 0 },
->>>>>>> 76d70fea24217ff4e4760ef2b1145dbcf39469c0
     blueprint_compat = true,
     update = function(self, card, dt)
         if card.ability.extra.anger == 2 then
