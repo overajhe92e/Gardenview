@@ -133,3 +133,39 @@ SMODS.Rarity {
         return weight
     end
 }
+
+SMODS.Rarity {
+    key = "itemjoker",
+    pools = {
+        ["Joker"] = true
+    },
+    default_weight = 0.05,
+    badge_colour = G.C.GREEN,
+    get_weight = function(self, weight, object_type)
+        return weight
+    end
+}
+
+SMODS.Rarity {
+    key = "trinketjoker",
+    pools = {
+        ["Joker"] = true
+    },
+    default_weight = 0.05,
+    badge_colour = G.C.GREEN,
+    get_weight = function(self, weight, object_type)
+        return weight
+    end
+}
+
+SMODS.Rarity {
+    key = "detrimental",
+    pools = {
+        ["Joker"] = true
+    },
+    default_weight = 0,
+    badge_colour = HEX("000000"),
+    get_weight = function(self, weight, object_type)
+        return weight
+    end
+}

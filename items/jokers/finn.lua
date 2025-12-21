@@ -14,10 +14,15 @@ SMODS.Joker {
     end,
     blueprint_compat = true,
 
+    add_to_deck = function(self,card,from_debuff)
+        G.GAME.pool_flags.dw_barnaby_spawnable = true
+    end,
+
     remove_from_deck = function(self, card, from_debuff)
         if next(SMODS.find_card("j_dw_barnaby")) then
             SMODS.destroy_cards(SMODS.find_card("j_dw_barnaby"))
         end
+        G.GAME.pool_flags.dw_barnaby_spawnable = true
     end,
 
     calculate = function(self, card, context)
@@ -30,7 +35,7 @@ SMODS.Joker {
                 xmult = 3
             }
         end
-        if context.final_scoring_step then
+        if context.final_scoring_step and not context.blueprint then
             card.ability.extra.active = "Inactive"
         end
         if context.end_of_round and context.game_over == false and not context.blueprint then
@@ -48,14 +53,14 @@ SMODS.Joker {
     rarity = 3,
     atlas = 'dw',
     pos = {x=8,y=0},
+    blueprint_compat = true,
+    in_pool = function(self,args)
+        return G.GAME.pool_flags.dw_barnaby_spawnable
+    end,
     calculate = function(self, card, context)
-        if context.joker_main and next(SMODS.find_card("j_dw_finn")) then
+        if context.joker_main then
             return {
-                echips = 1.5
-            }
-        elseif context.joker_main and not next(SMODS.find_card("j_dw_finn")) then
-            return {
-                echips = 1.125
+                emult = 1.05
             }
         end
     end

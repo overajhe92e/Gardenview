@@ -14,7 +14,17 @@ SMODS.Joker { --why is there a robot cat trying to claw at me
     loc_vars = function(self, info_queue, card)
         local planets_used = 0
         for k, v in pairs(G.GAME.consumeable_usage) do if v.set == 'Planet' then planets_used = planets_used + 1 end end
-        return { vars = { card.ability.extra.multi, (planets_used + 1) } }
+        return { 
+            vars = { card.ability.extra.multi, (planets_used + 1) }, 
+            key = starspace_mod == false and "j_dw_astro" or starspace_mod == true and "j_dw_astro_stpc" 
+        }
+    end,
+    update = function(self, card, dt)
+        if starspace_mod == false then
+            card.children.floating_sprite:set_sprite_pos { x = 3, y = 1 }
+        elseif starspace_mod == true then
+            card.children.floating_sprite:set_sprite_pos { x = 6, y = 1 }
+        end
     end,
     calculate = function(self, card, context)
         if context.setting_blind then
@@ -24,8 +34,8 @@ SMODS.Joker { --why is there a robot cat trying to claw at me
                     for k, v in pairs(G.GAME.consumeable_usage) do
                         if v.set == 'Planet' then planets_used = planets_used + 1 end
                     end
-                    ease_discard(G.GAME.current_round.discards_left + (planets_used))
-                    ease_hands_played(G.GAME.current_round.hands_left + (planets_used))
+                    ease_discard(planets_used)
+                    ease_hands_played(planets_used)
                     SMODS.calculate_effect(
                         { message = '+' .. tostring(planets_used + 1) .. ' Hands & Discards' },
                         context.blueprint_card or card)

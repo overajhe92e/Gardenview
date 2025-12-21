@@ -27,6 +27,13 @@ SMODS.Atlas {
     frames = 21
 }
 
+SMODS.Atlas {
+    key = 'dashjoker',
+    px = 71,
+    py = 95,
+    path = 'balaladash_crossmod_jokers.png'
+}
+
 SMODS.Font({
     key = 'balling',
     path = 'dwfont.ttf ',
@@ -37,6 +44,7 @@ SMODS.Font({
     squish = 1,                 -- Horizontal stretch (default: 1)
     DESCSCALE = 1               -- Description scale (default: 1)
 })
+
 local src = NFS.getDirectoryItems(SMODS.current_mod.path .. "items/jokers/")
 for _, file in ipairs(src) do
     assert(SMODS.load_file("items/jokers/" .. file))()
@@ -91,7 +99,20 @@ local function tag()
     end
 end
 
+local function trinketjoker()
+    local mod_path = SMODS.current_mod.path
+    local blinds = mod_path .. "items/trinkets"
+    local files = NFS.getDirectoryItemsInfo(blinds)
+    for i = 1, #files do
+        local file_name = files[i].name
+        if file_name:sub(-4) == ".lua" then
+            assert(SMODS.load_file("items/trinkets/" .. file_name))()
+        end
+    end
+end
+
 tag()
 blindbs()
 consume()
 misc()
+trinketjoker()

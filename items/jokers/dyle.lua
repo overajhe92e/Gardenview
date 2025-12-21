@@ -56,3 +56,9 @@ SMODS.Joker {
         end
     end
 }
+
+SMODS.Joker {
+    key = 'tw_dyle_bl',
+    cost = -1,
+    rarity = 'dw_detrimental',
+}

@@ -65,8 +65,8 @@ return {
                 text = {
                     {
                         "Adds {C:blue}+#2#{}",
-						"{C:blue}Hands{} and {C:red}Discards{}",
-						"when {C:attention}Blind{} is selected"
+                        "{C:blue}Hands{} and {C:red}Discards{}",
+                        "when {C:attention}Blind{} is selected"
                     },
                     {
                         "Each unique {C:planet}Planet{} used",
@@ -74,21 +74,50 @@ return {
                     }
                 }
             },
+            j_dw_astro_stpc = {
+                name = 'Astro?',
+                text = {
+                    {
+                        "Adds {C:blue}+#2#{}",
+                        "{C:blue}Hands{} and {C:red}Discards{}",
+                        "when {C:attention}Blind{} is selected",
+                        "{C:inactive}Something's wrong here.{}"
+                    },
+                    {
+                        "Each unique {C:planet}Planet{} used",
+                        "gives +1 additional Hands and Discards"
+                    },
+                }
+            },
             j_dw_twistedastro = {
-				name = "{C:dw_dandy}Twisted Astro{}",
-				text = {
-					{
-						"Adds {C:blue}X#2#{} of your current",
-						"{C:blue}Hands{} and {C:red}Discards{}",
-						"when {C:attention}Blind{} is selected",
-					},
-					{
-						"Each unique {C:planet}Planet{} card used",
-						"this run increases the multiplier",
-						"by {C:attention}+1{}"
-					}
-				}
-			},
+                name = "{C:dw_dandy}Twisted Astro{}",
+                text = {
+                    {
+                        "Adds {C:blue}X#2#{} of your current",
+                        "{C:blue}Hands{} and {C:red}Discards{}",
+                        "when {C:attention}Blind{} is selected",
+                    },
+                    {
+                        "Each unique {C:planet}Planet{} card used",
+                        "this run increases the multiplier",
+                        "by {C:attention}+1{}"
+                    }
+                }
+            },
+            j_dw_twistedastro_stpc = {
+                name = "{C:dw_dandy}Twisted... Astro?{}",
+                text = {
+                    {
+                        "{X:blue,C:white}^^#1#{} Chips",
+                        "{C:inactive}This was NOT the wind, Astro!{}"
+                    },
+                    {
+                        "Each unique {C:planet}Planet{} card used",
+                        "this run increases the multiplier",
+                        "by {C:attention}+1{}"
+                    }
+                }
+            },
             j_dw_dyle = {
                 name = "{C:dw_dandy}Dyle Timesly{}",
                 text = {
@@ -127,8 +156,14 @@ return {
             j_dw_vee = {
                 name = "Vee Version One",
                 text = {
-                    "{C:red}No ability yet!{}",
-                    "{C:green,s:0.85,E:1}#1#{}"
+                    {
+                        "Adds a new scoring window",
+                    },
+                    {
+                        "Adds {X:dark_edition,C:white}log(chips*mult)^0.1{} to",
+                        "Vee's scoring window",
+                        "{C:green,s:0.85,E:1}#1#{}"
+                    }
                 }
             },
             j_dw_shelly = {
@@ -163,8 +198,9 @@ return {
             j_dw_barnaby = {
                 name = "Barnaby Wilkers",
                 text = {
-                    "{X:dark_edition,C:white}^1.125{} Chips,",
-                    "{X:dark_edition,C:white}^1.5{} Chips if {C:attention}Finn{} is present."
+                    "{X:dark_edition,C:white}^1.05{} Mult",
+                    "{C:red}Destoryed{} if Finn is removed",
+                    "{C:inactive}Cannot spawn if Finn is not in Joker slots{}"
                 }
             },
             j_dw_tw_shelly = {
@@ -193,7 +229,8 @@ return {
                 text = {
                     "Gains {X:blue,C:white}X#1#{} Chips",
                     "for every {C:attention}Joker{} you have",
-                    "{C:inactive}( Currently{} {X:blue,C:white}X#2#{} {C:inactive}Chips ){}"
+                    "{C:inactive}( Currently{} {X:blue,C:white}X#2#{} {C:inactive}Chips ){}",
+                    "{C:inactive}( Currently{} {X:blue,C:white}/#3#{} {C:inactive}Mult ){}",
                 }
             },
             j_dw_ipadkid = {
@@ -235,24 +272,24 @@ return {
                     "{C:attention}Create{} a random Consumable at the end of round.",
                     "{C:attention}Create{} another when {C:attention}Boss Blind{} is defeated"
                 }
-            }, 
-            --[[ 
+            },
+            --[[
             YOU. ARE. A. MINOR!!!
-            also gonna add a prevention to weird mods like hotpot (nursery) and birthlatro 
+            also gonna add a prevention to weird mods like hotpot (nursery) and birthlatro
             ]]
             j_dw_iso = {
                 name = "Solinium (Toon-ified)",
                 text = {
                     {
-                    "{X:red,C:white}XMult{} uses the equation",
-                    "{X:dark_edition,C:white,s:1.3}n*(1+SCORE)^0.1{}",
-                    "n is increased by {C:attention}+1{} when",
-                    "a {C:attention}Blind{} is selected",
-                    "{C:attention}n is currently: #1#{}",
-                    "{C:inactive}Currently{} {X:red,C:white}X#2#{} {C:inactive}Mult{}",
-                    "{C:dark_edition,s:0.8,E:1}Mod Origin : Isotypical's Junkyard{}",
-                    "{C:dark_edition,s:0.8,E:1}Character : Solinium{}",
-                    "{C:dark_edition,s:0.8,E:1}Character Origin : Dog Man{}"
+                        "{X:red,C:white}XMult{} uses the equation",
+                        "{X:dark_edition,C:white,s:1.3}n*(1+SCORE)^0.1{}",
+                        "n is increased by {C:attention}+1{} when",
+                        "a {C:attention}Blind{} is selected",
+                        "{C:attention}n is currently: #1#{}",
+                        "{C:inactive}Currently{} {X:red,C:white}X#2#{} {C:inactive}Mult{}",
+                        "{C:dark_edition,s:0.8,E:1}Mod Origin : Isotypical's Junkyard{}",
+                        "{C:dark_edition,s:0.8,E:1}Character : Solinium{}",
+                        "{C:dark_edition,s:0.8,E:1}Character Origin : Dog Man{}"
                     },
                 }
             },
@@ -261,7 +298,7 @@ return {
                 text = {
                     {
                         "{f:dw_balling}Health{}",
-                        "{f:dw_balling}<3{}"                        
+                        "{f:dw_balling}<3{}"
                     },
                     {
                         "{f:dw_balling}Skill Check{}",
@@ -314,6 +351,27 @@ return {
                 name = "Traffic Cone",
                 text = {
                     "Prevents {C:attention}Twisted Debuffs{} from applying"
+                }
+            },
+            j_dw_pebble = {
+                name = "Pebble",
+                text = {
+                    "{C:attention}Doubles{} values of",
+                    "adjacent {C:attention}Jokers{}",
+                    "{C:red}Joker ability not implemented!{}"
+                }
+            },
+            j_dw_tw_pebble = {
+                name = "Twisted Pebble",
+                text = {
+                    "{C:red,s:1.5}BARK BARK{}",
+                    "{C:red}Joker ability not implemented!{}"
+                }
+            },
+            j_dw_brick = {
+                name = "Brick",
+                text = {
+                    "{X:default,C:white}X0.8{} Chips and Mult"
                 }
             }
         },
@@ -385,15 +443,18 @@ return {
         dictionary = {
 
             k_dw_yatta_quote1 = "PHEW! Good thing my tail hasn't been TANGLED!",
-            k_dw_yatta_quote2= "Did I drop candy ANYWHERE in the elevator?",
-            k_dw_yatta_quote3= "AHAHAHAaaa... Thought of something funny!",
-            k_dw_yatta_quote4= "Candy candy caNDY, CANDY FOR ALL!!!",
+            k_dw_yatta_quote2 = "Did I drop candy ANYWHERE in the elevator?",
+            k_dw_yatta_quote3 = "AHAHAHAaaa... Thought of something funny!",
+            k_dw_yatta_quote4 = "Candy candy caNDY, CANDY FOR ALL!!!",
 
             k_dw_finn_complete1 = "Hook, line and sinker!",
             k_dw_finn_complete2 = "I was born to fish, not to play cards!", -- i claim credit for this quote (fireice)
             k_dw_finn_complete3 = "It's as shrimp-le as that!",
             k_dw_finn_complete4 = "That wasn't very clam-plicated!",
 
+
+            k_dw_trinketjoker = "Trinket",
+            k_dw_itemjoker = "Item",
             k_dw_twisted_common = "Twisted Common",
             k_dw_twisted_uncommon = "Twisted Uncommon",
             k_dw_twisted_rare = "Twisted Rare",
@@ -409,7 +470,7 @@ return {
             k_dw_veespeak2 = "Question 1: Is this a waste of my time? Probably.",
             k_dw_veespeak3 = "As simple as binary code!",
             k_dw_veespeak4 = "I bet Dandy couldn't do this!",
-            
+
             k_dw_dandy_stage1_1 = "So no items? That's ok! I'll be back!",
             k_dw_dandy_stage1_2 = "I'll have a better stock next time!",
             k_dw_dandy_stage1_3 = "Short on money? Don't worry! I'm sure you'll have some more later!",
@@ -464,6 +525,8 @@ return {
         },
         high_scores = {},
         labels = {
+            dw_trinketjoker = "Trinket",
+            dw_itemjoker = "Item",
             dw_twisted_common = "Twisted Common",
             dw_twisted_uncommon = "Twisted Uncommon",
             dw_twisted_rare = "Twisted Rare",

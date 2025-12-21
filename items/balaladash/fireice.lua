@@ -7,6 +7,9 @@ SMODS.Joker {
             mult = 1
         }
     },
+    atlas = 'dashjoker',
+    pos = {x=0,y=0},
+    soul_pos = {x=1,y=0},
     loc_vars = function(self, info_queue, card)
         return {
             vars = { card.ability.extra.mult }

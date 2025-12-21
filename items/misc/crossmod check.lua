@@ -22,6 +22,10 @@ local function iso()
     end
 end
 
+if next(SMODS.find_mod('starspace')) then
+    starspace_mod = true
+end
+
 if next(SMODS.find_mod('ocstobalatro')) then
     iso()
 end

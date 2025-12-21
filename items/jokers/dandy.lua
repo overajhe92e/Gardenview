@@ -16,16 +16,19 @@ SMODS.Joker {
     blueprint_compat = true,
     update = function(self, card, dt)
         if card.ability.extra.anger == 2 then
-            card.children.floating_sprite:set_sprite_pos { x = 6, y = 1 }
+            card.children.floating_sprite:set_sprite_pos { x = 5, y = 2 }
+            card.children.center:set_sprite_pos { x = 4, y = 2 }
         elseif card.ability.extra.anger == 3 then
-            card.children.floating_sprite:set_sprite_pos { x = 6, y = 0 }
+            card.children.floating_sprite:set_sprite_pos { x = 5, y = 1 }
+            card.children.center:set_sprite_pos { x = 4, y = 1 }
         end
     end,
     loc_vars = function(self, info_queue, card)
         return {
             vars = { card.ability.extra.xmult, card.ability.extra.anger },
             key = G.PROFILES[G.SETTINGS.profile].encountered_tw_dandy == true and "j_dw_dandy_post_encounter"
-                or G.PROFILES[G.SETTINGS.profile].encountered_tw_dandy == false and "j_dw_dandy_pre_encounter" or nil
+                or G.PROFILES[G.SETTINGS.profile].encountered_tw_dandy == false and "j_dw_dandy_pre_encounter" 
+                or G.PROFILES[G.SETTINGS.profile].encountered_tw_dandy == nil and "j_dw_dandy_pre_encounter"
         }
     end,
     calculate = function(self, card, context)
@@ -72,7 +75,6 @@ SMODS.Joker {
                     delay = 1,
                     func = function()
                         SMODS.add_card { key = 'j_dw_tw_dandy' }
-                        SMODS.add_card { key = 'j_dw_twistedastro' }
                         return true
                     end
                 }))
@@ -83,7 +85,7 @@ SMODS.Joker {
             card.ability.extra.anger = card.ability.extra.anger + 1
             if card.ability.extra.anger == 1 then
                 return {
-                    message = localize("k_dw_dandy_stage1_" .. pseudorandom("stage1", 1, 6))
+                    message = localize("k_dw_dandy_stage1_" .. pseudorandom("stage1", 1, 4))
                 }
             elseif card.ability.extra.anger == 2 then
                 return {
@@ -127,6 +129,9 @@ SMODS.Joker {
                 emult = card.ability.extra.wake_up_its_talisman_check_time *
                     math.max(0, (G.GAME.dollars or 0) + (G.GAME.dollar_buffer or 0)) + 1
             }
+        end
+        if context.end_of_round and context.game_over == false and context.main_eval and context.beat_boss and not context.blueprint then
+            G.GAME.dollars = G.GAME.dollars / 2
         end
     end
 }
