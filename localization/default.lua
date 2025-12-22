@@ -160,7 +160,7 @@ return {
                         "Adds a new scoring window",
                     },
                     {
-                        "Adds {X:dark_edition,C:white}log(chips*mult)^0.1{} to",
+                        "Adds {X:dark_edition,C:white}(log(chips*mult)^0.1)-1{} to",
                         "Vee's scoring window",
                         "{C:green,s:0.85,E:1}#1#{}"
                     }

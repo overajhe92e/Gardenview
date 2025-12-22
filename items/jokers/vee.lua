@@ -1,6 +1,6 @@
 SMODS.Scoring_Parameter({
     key = 'vee',
-    default_value = 0,
+    default_value = 1,
     colour = HEX("b4f2b6"),
     calculation_keys = { 'vee', 'xvee' },
     calc_effect = function(self, effect, scored_card, key, amount, from_edition)
