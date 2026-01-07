@@ -44,6 +44,9 @@ SMODS.Blind {
 
     defeat = function(self)
         G.GAME.dylestime = false
+        if next(SMODS.find_card("j_dw_rodger")) then
+            SMODS.add_card{key='j_dw_tw_dyle'}
+        end
     end,
 
     in_pool = function(self)

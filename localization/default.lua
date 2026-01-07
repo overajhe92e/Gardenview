@@ -245,12 +245,12 @@ return {
                     }
                 }
             },
-            j_dw_tw_ipadkid = {
+            j_dw_rabid_kid = {
                 name = "Twisted Toodles",
                 text = {
                     {
-                        "Retriggers {C:attention}ALL{} scored cards {C:attention}#2#{} times",
-                        "{C:attention}8s{} get retriggered an extra {C:attention}#1#{} times"
+                        "Retriggers {C:attention}all{} scored cards {C:attention}#1#{} times",
+                        "{C:attention}8s{} instead get retriggered {C:attention}#2#{} times"
                     },
                     {
                         "Alright Isotypical, {C:red}pack it up{}",
@@ -364,7 +364,8 @@ return {
             j_dw_tw_pebble = {
                 name = "Twisted Pebble",
                 text = {
-                    "{C:red,s:1.5}BARK BARK{}",
+                    "Don't tell me it's Nermal...",
+                    "{C:red,s:1.5}It's Nermal.{}",
                     "{C:red}Joker ability not implemented!{}"
                 }
             },
@@ -372,6 +373,13 @@ return {
                 name = "Brick",
                 text = {
                     "{X:default,C:white}X0.8{} Chips and Mult"
+                }
+            },
+            j_dw_rodger = {
+                name = "Rodger",
+                text = {
+                    "Every Joker gives {X:red,C:white}X1.1{} Mult",
+                    "{C:inactive}Some blinds give jokers now...{}"
                 }
             }
         },
