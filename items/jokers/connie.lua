@@ -33,7 +33,7 @@ SMODS.Joker {
         if context.joker_main then
             return {
                 xchips = card.ability.extra.xmult * (G.jokers and #G.jokers.cards or 0),
-                xmult = math.max(1,
+                xmult = card.ability.extra.div / math.max(1,
                 (G.jokers.config.card_limit - #G.jokers.cards) + #SMODS.find_card("j_dw_tw_connie", true))
             }
         end

@@ -15,10 +15,10 @@ SMODS.Joker {
     soul_pos = {x=3,y=2},
     blueprint_compat = true,
     update = function(self, card, dt)
-        if card.ability.extra.anger == 2 then
+        if card.ability.extra.anger >= 2 then
             card.children.floating_sprite:set_sprite_pos { x = 5, y = 2 }
             card.children.center:set_sprite_pos { x = 4, y = 2 }
-        elseif card.ability.extra.anger == 3 then
+        elseif card.ability.extra.anger >= 3 then
             card.children.floating_sprite:set_sprite_pos { x = 5, y = 1 }
             card.children.center:set_sprite_pos { x = 4, y = 1 }
         end

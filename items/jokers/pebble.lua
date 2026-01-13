@@ -3,7 +3,15 @@ SMODS.Joker {
     cost = 20,
     rarity = 4,
     atlas = 'dw',
-    pos = {x=8,y=0},
+    pos = { x = 8, y = 0 },
+    config = {
+        extra = { 
+            bark_1 = 2,
+            bark_2 = 2
+        }
+    },
+    update = function(self,card,dt)
+    end
 }
 
 SMODS.Joker {
@@ -11,5 +19,5 @@ SMODS.Joker {
     cost = 20,
     rarity = 'dw_twisted_legendary',
     atlas = 'dw',
-    pos = {x=8,y=0},
+    pos = { x = 8, y = 0 },
 }

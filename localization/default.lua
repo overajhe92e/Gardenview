@@ -381,6 +381,14 @@ return {
                     "Every Joker gives {X:red,C:white}X1.1{} Mult",
                     "{C:inactive}Some blinds give jokers now...{}"
                 }
+            },
+            j_dw_eggson = {
+                name = "Eggson",
+                text = {
+                    "im old!",
+                    "Gives {C:attention}1/10th{} of {C:attention}Blind Requirement{}",
+                    "as {C:chips}+Chips{}"
+                }
             }
         },
         Other = {},
