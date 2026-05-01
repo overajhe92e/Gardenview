@@ -2,6 +2,11 @@ SMODS.Consumable {
     key = 'stealth',
     set = 'candy',
     config = { extra = { blind = 0.95 } },
+    loc_vars = function(self, info_queue, card)
+        return {
+            card.ability.extra.blind
+        }
+    end,
     can_use = function(self, card)
         return (G.GAME.blind.in_blind)
     end,

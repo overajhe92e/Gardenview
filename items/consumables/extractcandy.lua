@@ -10,7 +10,7 @@ SMODS.Consumable {
     end,
     use = function(self, card, area, copier)
         local used_card = copier or card
-            for i = 1, 1 do
+            for i = 1, 2 do
             G.E_MANAGER:add_event(Event({
             trigger = 'after',
             delay = 0.4,

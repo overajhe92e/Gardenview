@@ -19,10 +19,10 @@ SMODS.Atlas {
     path = 'isojunk_crossmod_jokers.png'
 }
 SMODS.Atlas {
-    key = 'timesup',
+    key = 'blinds',
     px = 34,
     py = 34,
-    path = 'timesup.png',
+    path = 'blinds.png',
     atlas_table = 'ANIMATION_ATLAS',
     frames = 21
 }

@@ -392,15 +392,73 @@ return {
             }
         },
         Other = {},
+        item = {
+            c_dw_valve = {
+                name = "Valve",
+                text = {
+                    {
+                        "While extracting a Machine, instantly completes it upon use.",
+                        "{C:inactive,s:0.8}(Cannot be used when not extracting a Machine.)"
+                    },
+                    {
+                        "On use, {C:attention}instantly win Blind"
+                    }
+                }
+            },
+            c_dw_baskets = {
+                name = "Baskets",
+                text = {
+                    {
+                        "{C:green}1 in 4{} chance to create an {C:attention}Easter{} toon",
+                    },
+                    {
+                        "NOT IMPLEMENTED"
+                    }
+                }
+            },
+            c_dw_ornaments = {
+                name = "Ornaments",
+                text = {
+                    {
+                        "{C:green}1 in 4{} chance to create a {C:attention}Christmas{} toon",
+                    },
+                    {
+                        "NOT IMPLEMENTED"
+                    }
+                }
+            },
+            c_dw_pumpkins = {
+                name = "Pumpkins",
+                text = {
+                    {
+                        "{C:green}1 in 4{} chance to create a {C:attention}Halloween{} toon",
+                    },
+                    {
+                        "NOT IMPLEMENTED"
+                    }
+                }
+            },
+        },
         candy = {
             c_dw_speed = {
                 name = "Speed Candy",
                 text = {
                     {
-                        "Upon use, increases Walk and Run Speed by 25% for 5 seconds."
+                        "Upon use, increases {C:attention}Walk{} and {C:attention}Run Speed{} by 25% for 5 seconds."
                     },
                     {
-                        "{C:money}+15${}"
+                        "On use, {C:money}+4${}"
+                    }
+                }
+            },
+            c_dw_stamina = {
+                name = "Stamina Candy",
+                text = {
+                    {
+                        "Upon use, increases {C:green}Stamina Regeneration{} by 50% for 20 seconds."
+                    },
+                    {
+                        "On use, gain {C:blue}+1{} Hand"
                     }
                 }
             },
@@ -408,10 +466,10 @@ return {
                 name = "Stealth Candy",
                 text = {
                     {
-                        "Upon use, increases Stealth by 25% for 8 seconds."
+                        "Upon use, increases {C:blue}Stealth{} by 25% for 8 seconds."
                     },
                     {
-                        "{X:attention,C:white}X0.95{} Blind Requirement"
+                        "On use, {X:attention,C:white}X0.95{} Blind Requirement"
                     }
                 }
             },
@@ -420,10 +478,10 @@ return {
                 text = {
                     {
                         "While extracting a machine,",
-                        "increases Extraction Speed by 50% for 5 seconds upon use."
+                        "increases {C:purple}Extraction Speed{} by 50% for 5 seconds upon use."
                     },
                     {
-                        "Create 1 {C:dark_edition}Negative {C:tarot}Tarot"
+                        "Create 2 {C:dark_edition}Negative {C:tarot}Tarots"
                     }
                 }
             },

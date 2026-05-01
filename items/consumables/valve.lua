@@ -1,6 +1,9 @@
 SMODS.Consumable {
     key = 'valve',
     set = 'item',
+    can_use = function(self, card)
+        return true
+    end,
     use = function(self, card, area, copier)
         G.E_MANAGER:add_event(Event({
             blocking = false,
